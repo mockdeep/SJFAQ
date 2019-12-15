@@ -29,4 +29,6 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
 
   config.render_views
+
+  config.include(SystemHelpers, type: :system)
 end

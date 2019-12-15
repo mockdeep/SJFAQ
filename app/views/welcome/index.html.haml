@@ -2,3 +2,7 @@ Welcome
 = link_to("Add question", new_question_path)
 - questions.each do |question|
   %h3= question.text
+  - if question.answer
+    %p= question.answer.text
+  - else
+    = link_to("Add answer", new_question_answer_path(question))
