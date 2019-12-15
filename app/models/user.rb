@@ -3,8 +3,8 @@
 class User < ApplicationRecord
   has_secure_password
 
-  has_many :questions
-  
+  has_many :questions, dependent: :restrict_with_exception
+
   validates :email, presence: true, format: URI::MailTo::EMAIL_REGEXP
 
   def self.find_by(args)
