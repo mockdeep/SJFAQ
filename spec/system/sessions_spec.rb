@@ -3,12 +3,6 @@
 require "rails_helper"
 
 RSpec.describe "user sessions", type: :system do
-  user_params = {
-    email: "demo@lmkw.io",
-    password: "secret",
-    password_confirmation: "secret",
-  }
-
   def sign_in_with(email:, password:)
     visit("/")
 

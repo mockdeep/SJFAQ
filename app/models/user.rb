@@ -4,6 +4,7 @@ class User < ApplicationRecord
   has_secure_password
 
   has_many :questions, dependent: :restrict_with_exception
+  has_many :answers, dependent: :restrict_with_exception
 
   validates :email, presence: true, format: URI::MailTo::EMAIL_REGEXP
 

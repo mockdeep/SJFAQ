@@ -9,5 +9,7 @@ Rails.application.routes.draw do
 
   resource :account, only: [:new, :create, :show, :update, :destroy]
   resource :session, only: [:new, :create, :destroy]
-  resources :questions, only: [:new, :create]
+  resources :questions, only: [:new, :create] do
+    resources :answers, only: [:new, :create], shallow: true
+  end
 end
