@@ -12,9 +12,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_15_224837) do
+ActiveRecord::Schema.define(version: 2019_12_20_221449) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  # These are custom enum types that must be created before they can be used in the schema definition
+  create_enum "role_type", ["viewer", "admin"]
 
   create_table "answers", force: :cascade do |t|
     t.bigint "user_id", null: false
@@ -41,6 +44,7 @@ ActiveRecord::Schema.define(version: 2019_12_15_224837) do
     t.string "password_digest", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.enum "role", default: "viewer", null: false, as: "role_type"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 

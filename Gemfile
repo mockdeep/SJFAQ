@@ -7,6 +7,7 @@ ruby "2.6.3"
 
 gem "rails", "~> 6.0.0"
 
+gem "activerecord-pg_enum"
 gem "bcrypt"
 gem "bootsnap", require: false
 gem "haml-rails"

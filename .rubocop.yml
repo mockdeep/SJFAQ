@@ -43,6 +43,7 @@ Style/MethodCallWithArgsParentheses:
     - default
     - delegate
     - describe
+    - enum
     - exec
     - exit
     - fit
