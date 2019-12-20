@@ -45,6 +45,10 @@ GEM
     activerecord (6.0.2.1)
       activemodel (= 6.0.2.1)
       activesupport (= 6.0.2.1)
+    activerecord-pg_enum (1.0.5)
+      activerecord (>= 4.1.0)
+      activesupport
+      pg
     activestorage (6.0.2.1)
       actionpack (= 6.0.2.1)
       activejob (= 6.0.2.1)
@@ -342,6 +346,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-pg_enum
   bcrypt
   bootsnap
   brakeman
