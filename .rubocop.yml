@@ -20,10 +20,11 @@ Metrics/BlockLength:
   Exclude:
     - Guardfile
     - db/schema.rb
-Metrics/LineLength:
+Layout/LineLength:
   Exclude:
     - 'config/**/*'
     - 'db/schema.rb'
+    - 'app/views/**/*' # https://github.com/sds/haml-lint/pull/319
   AutoCorrect: true
 Rails/FilePath: { EnforcedStyle: slashes }
 RSpec/MultipleExpectations:
