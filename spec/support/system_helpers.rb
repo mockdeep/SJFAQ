@@ -14,7 +14,15 @@ module SystemHelpers
   end
 
   def create_question(params)
-    Question.create!(params)
+    question = Question.create!(params)
+
+    visit(current_path)
+
+    question
+  end
+
+  def create_answer(params)
+    Answer.create!(params)
 
     visit(current_path)
   end
@@ -55,5 +63,19 @@ module SystemHelpers
     click_link(t("add_answer"))
     fill_in("Text", with: text)
     click_button(t("create_answer"))
+  end
+
+  def update_question(question_text, text:)
+    expect(page).to have_text(question_text)
+    click_link(t("edit_question"))
+    fill_in("Text", with: text)
+    click_button(t("update_question"))
+  end
+
+  def update_answer(question_text, text:)
+    expect(page).to have_text(question_text)
+    click_link(t("edit_answer"))
+    fill_in("Text", with: text)
+    click_button(t("update_answer"))
   end
 end

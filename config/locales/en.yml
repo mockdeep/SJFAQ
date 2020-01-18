@@ -32,5 +32,9 @@
 en:
   add_answer: Add answer
   add_question: Add question
+  edit_answer: Edit answer
+  edit_question: Edit question
   create_answer: Create Answer
   create_question: Create Question
+  update_answer: Update Answer
+  update_question: Update Question
