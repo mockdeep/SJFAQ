@@ -5,12 +5,12 @@ default: &default
 
 development:
   <<: *default
-  database: yourappnamehere_development
+  database: justice_party_development
 
 test:
   <<: *default
-  database: yourappnamehere_test
+  database: justice_party_test
 
 production:
   <<: *default
-  database: yourappnamehere_production
+  database: justice_party_production
