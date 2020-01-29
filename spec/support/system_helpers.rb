@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 module SystemHelpers
+  include ActionText::SystemTestHelper
+
   def t(key)
     I18n.t(key)
   end
@@ -61,7 +63,7 @@ module SystemHelpers
   def add_answer(text, question_text:)
     expect(page).to have_text(question_text)
     click_link(t("add_answer"))
-    fill_in("Text", with: text)
+    fill_in_rich_text_area("answer_text", with: text)
     click_button(t("create_answer"))
   end
 
@@ -75,7 +77,7 @@ module SystemHelpers
   def update_answer(question_text, text:)
     expect(page).to have_text(question_text)
     click_link(t("edit_answer"))
-    fill_in("Text", with: text)
+    fill_in_rich_text_area("answer_text", with: text)
     click_button(t("update_answer"))
   end
 end

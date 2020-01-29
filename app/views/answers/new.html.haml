@@ -2,5 +2,5 @@
 
 = form_with(scope: :answer, url: question_answers_path(question)) do |form|
   = form.label(:text)
-  = form.text_field(:text)
+  = form.rich_text_area(:text)
   = form.submit(t("create_answer"))

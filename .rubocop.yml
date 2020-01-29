@@ -50,6 +50,7 @@ Style/MethodCallWithArgsParentheses:
     - gem
     - has_many
     - has_one
+    - has_rich_text
     - helper_method
     - include
     - it
