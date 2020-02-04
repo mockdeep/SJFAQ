@@ -1,0 +1,6 @@
+set -euox pipefail
+
+heroku maintenance:on
+git push heroku master
+heroku run rails db:migrate
+heroku maintenance:off
