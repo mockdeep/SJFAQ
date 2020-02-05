@@ -5,12 +5,12 @@ default: &default
 
 development:
   <<: *default
-  database: justice_party_development
+  database: justice_garden_development
 
 test:
   <<: *default
-  database: justice_party_test
+  database: justice_garden_test
 
 production:
   <<: *default
-  database: justice_party_production
+  database: justice_garden_production
