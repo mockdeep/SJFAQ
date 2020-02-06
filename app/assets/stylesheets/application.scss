@@ -26,7 +26,6 @@ ol,
 ul,
 td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
   line-height: 18px;
 }
 
@@ -101,4 +100,10 @@ div.actions {
 
 label {
   display: block;
+}
+
+article {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
