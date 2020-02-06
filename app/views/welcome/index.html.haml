@@ -1,12 +1,12 @@
-Welcome
-= link_to(t("add_question"), new_question_path) if current_user.admin?
-- questions.each do |question|
-  %h3= question.text
-  - if current_user.admin?
-    = link_to(t("edit_question"), edit_question_path(question))
-  - if question.answer
-    %p= question.answer.text
+%article
+  = link_to(t("add_question"), new_question_path) if current_user.admin?
+  - questions.each do |question|
+    %h3= question.text
     - if current_user.admin?
-      = link_to(t("edit_answer"), edit_answer_path(question.answer))
-  - elsif current_user.admin?
-    = link_to(t("add_answer"), new_question_answer_path(question))
+      = link_to(t("edit_question"), edit_question_path(question))
+    - if question.answer
+      %p= question.answer.text
+      - if current_user.admin?
+        = link_to(t("edit_answer"), edit_answer_path(question.answer))
+    - elsif current_user.admin?
+      = link_to(t("add_answer"), new_question_answer_path(question))

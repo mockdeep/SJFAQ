@@ -6,6 +6,6 @@ RSpec.describe "welcome page", type: :system do
   it "has welcome text" do
     visit("/")
 
-    expect(page).to have_text("Welcome")
+    expect(page).to have_text("Log In")
   end
 end
