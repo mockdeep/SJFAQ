@@ -46,7 +46,7 @@ module SystemHelpers
 
     click_link("Log In")
 
-    expect(page).to have_text("Log in to Justice.Party")
+    expect(page).to have_text("Log in to Justice.Garden")
 
     fill_in("Email", with: user.email)
     fill_in("Password", with: user.password)

@@ -8,7 +8,7 @@ RSpec.describe "user sessions", type: :system do
 
     click_link("Log In")
 
-    expect(page).to have_text("Log in to Justice.Party")
+    expect(page).to have_text("Log in to Justice.Garden")
 
     fill_in("Email", with: email)
     fill_in("Password", with: password)
@@ -32,7 +32,7 @@ RSpec.describe "user sessions", type: :system do
     sign_in_with(email: "wrong@email", password: user.password)
 
     expect(page).to have_flash(:error, "Invalid email or password")
-    expect(page).to have_text("Log in to Justice.Party")
+    expect(page).to have_text("Log in to Justice.Garden")
     expect(page).to have_no_text(user.email)
   end
 
@@ -42,7 +42,7 @@ RSpec.describe "user sessions", type: :system do
     sign_in_with(email: user.email, password: "wrong password")
 
     expect(page).to have_flash(:error, "Invalid email or password")
-    expect(page).to have_text("Log in to Justice.Party")
+    expect(page).to have_text("Log in to Justice.Garden")
     expect(page).to have_no_text(user.email)
   end
 
