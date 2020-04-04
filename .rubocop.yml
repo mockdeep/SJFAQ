@@ -22,11 +22,9 @@ Metrics/BlockLength:
   Exclude:
     - Guardfile
     - db/schema.rb
+# https://github.com/rubocop-hq/rubocop/issues/7841
+Style/TrailingCommaInBlockArgs: { Enabled: false }
 Layout/LineLength:
-  Exclude:
-    - 'config/**/*'
-    - 'db/schema.rb'
-    - 'app/views/**/*' # https://github.com/sds/haml-lint/pull/319
   AutoCorrect: true
 Rails/FilePath: { EnforcedStyle: slashes }
 RSpec/MultipleExpectations:
