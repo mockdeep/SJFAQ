@@ -24,15 +24,17 @@ if Rails.env.development? || Rails.env.test?
     sh("yarn stylelint")
   end
 
-  task(lint: [
-         "yarn:install",
-         "yarn:audit",
-         "bundle:audit",
-         :brakeman,
-         :rubocop,
-         :haml_lint,
-         :stylelint,
-       ])
+  task(
+    lint: [
+      "yarn:install",
+      "yarn:audit",
+      "bundle:audit",
+      :brakeman,
+      :rubocop,
+      :haml_lint,
+      :stylelint,
+    ],
+  )
 
   task(default: [:lint, :spec])
 end
