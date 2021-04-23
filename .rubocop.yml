@@ -8,7 +8,7 @@ AllCops:
   DefaultFormatter: fuubar
   DisplayCopNames: true
   EnabledByDefault: true
-  Exclude: [node_modules/**/*, vendor/**/*]
+  Exclude: [db/schema.rb, node_modules/**/*, vendor/**/*]
 
 ################################################################################
 #
@@ -25,6 +25,7 @@ Metrics/BlockLength:
 # https://github.com/rubocop-hq/rubocop/issues/7841
 Style/TrailingCommaInBlockArgs: { Enabled: false }
 Layout/LineLength:
+  Max: 80
   AutoCorrect: true
 Rails/FilePath: { EnforcedStyle: slashes }
 RSpec/MultipleExpectations:
