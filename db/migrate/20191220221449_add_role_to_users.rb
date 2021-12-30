@@ -5,7 +5,7 @@ class AddRoleToUsers < ActiveRecord::Migration[6.0]
     safety_assured do
       create_enum :role_type, ["viewer", "admin"]
       change_table :users do |t|
-        t.enum :role, as: "role_type", default: "viewer", null: false
+        t.enum :role, enum_type: "role_type", default: "viewer", null: false
       end
     end
   end

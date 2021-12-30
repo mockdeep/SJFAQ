@@ -18,6 +18,7 @@ AllCops:
 
 Metrics/BlockLength:
   IgnoredMethods:
+    - configure
     - describe
   Exclude:
     - Guardfile
@@ -27,6 +28,7 @@ Style/TrailingCommaInBlockArgs: { Enabled: false }
 Layout/LineLength:
   Max: 80
   AutoCorrect: true
+  Exclude: ['config/**/*']
 Rails/FilePath: { EnforcedStyle: slashes }
 RSpec/MultipleExpectations:
   Exclude:
