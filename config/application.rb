@@ -24,7 +24,12 @@ module LetMeKnowWhen
     config.active_record.belongs_to_required_by_default = false
     config.action_view.form_with_generates_remote_forms = false
 
-    config.autoload_paths << Rails.root.join("app/models/nulls")
-    config.autoload_paths << Rails.root.join("lib/route_constraints")
+    extra_paths = [
+      Rails.root.join("app/models/nulls"),
+      Rails.root.join("lib/route_constraints"),
+    ]
+
+    config.autoload_paths += extra_paths
+    config.eager_load_paths += extra_paths
   end
 end
