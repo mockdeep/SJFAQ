@@ -7,7 +7,6 @@ ruby File.read("./.ruby-version").strip
 
 gem "rails", "~> 7.0.0"
 
-gem "activerecord-pg_enum"
 gem "bcrypt"
 gem "bootsnap", require: false
 gem "haml-rails"

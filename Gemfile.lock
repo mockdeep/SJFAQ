@@ -48,10 +48,6 @@ GEM
     activerecord (7.0.0)
       activemodel (= 7.0.0)
       activesupport (= 7.0.0)
-    activerecord-pg_enum (1.2.2)
-      activerecord (>= 4.1.0)
-      activesupport
-      pg
     activestorage (7.0.0)
       actionpack (= 7.0.0)
       activejob (= 7.0.0)
@@ -356,7 +352,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord-pg_enum
   bcrypt
   bootsnap
   brakeman
@@ -400,4 +395,4 @@ RUBY VERSION
    ruby 3.0.3
 
 BUNDLED WITH
-   2.1.4
+   2.2.32

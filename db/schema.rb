@@ -15,9 +15,6 @@ ActiveRecord::Schema.define(version: 2021_12_30_183933) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  # These are custom enum types that must be created before they can be used in the schema definition
-  create_enum "role_type", viewer,admin
-
   # Custom types defined in this database.
   # Note that some types may not work with other database engines. Be careful if changing database.
   create_enum "role_type", ["viewer", "admin"]
@@ -85,7 +82,7 @@ ActiveRecord::Schema.define(version: 2021_12_30_183933) do
     t.string "password_digest", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.enum "role", default: "viewer", null: false, enum_type: "role_type", as: "role_type"
+    t.enum "role", default: "viewer", null: false, enum_type: "role_type"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 

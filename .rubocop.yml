@@ -18,6 +18,7 @@ AllCops:
 
 Metrics/BlockLength:
   IgnoredMethods:
+    - configure
     - describe
   Exclude:
     - Guardfile
