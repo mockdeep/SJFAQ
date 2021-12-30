@@ -10,12 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_29_231557) do
+ActiveRecord::Schema.define(version: 2021_12_30_183933) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   # These are custom enum types that must be created before they can be used in the schema definition
+  create_enum "role_type", viewer,admin
+
+  # Custom types defined in this database.
+  # Note that some types may not work with other database engines. Be careful if changing database.
   create_enum "role_type", ["viewer", "admin"]
 
   create_table "action_text_rich_texts", force: :cascade do |t|
@@ -44,9 +48,18 @@ ActiveRecord::Schema.define(version: 2020_01_29_231557) do
     t.string "content_type"
     t.text "metadata"
     t.bigint "byte_size", null: false
-    t.string "checksum", null: false
+    t.string "checksum"
     t.datetime "created_at", null: false
+    t.string "service_name", null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
+
+  create_table "active_storage_variant_records", force: :cascade do |t|
+    t.bigint "blob_id", null: false
+    t.string "variation_digest", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
   create_table "answers", force: :cascade do |t|
@@ -72,11 +85,12 @@ ActiveRecord::Schema.define(version: 2020_01_29_231557) do
     t.string "password_digest", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.enum "role", default: "viewer", null: false, as: "role_type"
+    t.enum "role", default: "viewer", null: false, enum_type: "role_type", as: "role_type"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "answers", "questions"
   add_foreign_key "answers", "users"
   add_foreign_key "questions", "users"
