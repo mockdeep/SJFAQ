@@ -1,0 +1,10 @@
+extends:
+  - stylelint-config-property-sort-order-smacss
+  - stylelint-config-standard-scss
+  - ./.stylelint_wishlist.yml
+  - ./.stylelint_todo.yml
+plugins:
+  - stylelint-selector-bem-pattern
+rules:
+  selector-class-pattern: null # handled by stylelint-selector-bem-pattern
+  # selector-type-no-unknown: [error, { ignore: [custom-elements] }]
