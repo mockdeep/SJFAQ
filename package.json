@@ -18,8 +18,8 @@
     "postcss": "dep of stylelint-config-standard-scss, can maybe remove later"
   },
   "devDependencies": {
-    "postcss": "^8.4.13",
-    "stylelint": "^14.8.2",
+    "postcss": "^8.4.14",
+    "stylelint": "^14.8.5",
     "stylelint-config-property-sort-order-smacss": "^9.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-selector-bem-pattern": "^2.1.1",
