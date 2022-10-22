@@ -3,13 +3,13 @@
 class QuestionsController < ApplicationController
   def new; end
 
+  def edit
+    render(locals: { question: Question.find(params[:id]) })
+  end
+
   def create
     current_user.questions.create!(question_params)
     redirect_to(root_path)
-  end
-
-  def edit
-    render(locals: { question: Question.find(params[:id]) })
   end
 
   def update
