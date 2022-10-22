@@ -7,14 +7,14 @@ class AnswersController < ApplicationController
     render(:new, locals: { question: question })
   end
 
+  def edit
+    render(locals: { answer: Answer.find(params[:id]) })
+  end
+
   def create
     create_params = answer_params.merge(question_id: params[:question_id])
     current_user.answers.create!(create_params)
     redirect_to(root_path)
-  end
-
-  def edit
-    render(locals: { answer: Answer.find(params[:id]) })
   end
 
   def update
