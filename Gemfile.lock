@@ -380,7 +380,7 @@ DEPENDENCIES
   pg
   pry-byebug
   pry-rails
-  puma
+  puma (~> 5.6)
   rails (~> 7.0.0)
   rspec-rails
   rubocop
