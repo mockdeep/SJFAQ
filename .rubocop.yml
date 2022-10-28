@@ -17,7 +17,7 @@ AllCops:
 ################################################################################
 
 Metrics/BlockLength:
-  IgnoredMethods:
+  AllowedMethods:
     - configure
     - describe
   Exclude:
@@ -36,7 +36,7 @@ RSpec/MultipleExpectations:
 RSpec/MessageExpectation: { EnforcedStyle: expect }
 Style/CommentedKeyword: { Enabled: false }
 Style/MethodCallWithArgsParentheses:
-  IgnoredMethods:
+  AllowedMethods:
     - attr_accessor
     - attr_reader
     - attr_writer
