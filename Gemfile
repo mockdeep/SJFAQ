@@ -10,6 +10,7 @@ gem "rails", "~> 7.0.0"
 gem "bcrypt"
 gem "bootsnap", require: false
 gem "haml-rails"
+gem "nokogiri", "~> 1.14.0.rc1" # for Ruby 3.2
 gem "pg"
 gem "pry-rails"
 gem "puma", "~> 6.0"
