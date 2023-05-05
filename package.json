@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "postcss": "^8.4.23",
-    "stylelint": "^15.4.0",
+    "stylelint": "^15.6.0",
     "stylelint-config-property-sort-order-smacss": "^9.1.0",
     "stylelint-config-standard-scss": "^8.0.0",
     "stylelint-selector-bem-pattern": "^2.1.1",
