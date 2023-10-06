@@ -11,7 +11,7 @@
     "@rails/activestorage": "^7.0.8",
     "@rails/ujs": "^7.0.8",
     "@rails/webpacker": "^5.4.4",
-    "trix": "^2.0.5",
+    "trix": "^2.0.6",
     "turbolinks": "^5.2.0"
   },
   "//": {
