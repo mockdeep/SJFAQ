@@ -2,7 +2,7 @@
 
 require_relative "config/application"
 
-if Rails.env.development? || Rails.env.test?
+if Rails.env.local?
   require "bundler/audit/task"
   Bundler::Audit::Task.new
 
