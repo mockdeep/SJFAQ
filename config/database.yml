@@ -6,10 +6,12 @@ default: &default
 development:
   <<: *default
   database: justice_garden_development
+  host: localhost
 
 test:
   <<: *default
   database: justice_garden_test
+  host: localhost
 
 production:
   <<: *default
