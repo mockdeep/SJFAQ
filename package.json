@@ -20,7 +20,7 @@
   "devDependencies": {
     "postcss": "^8.4.32",
     "stylelint": "^15.11.0",
-    "stylelint-config-property-sort-order-smacss": "^9.1.0",
+    "stylelint-config-property-sort-order-smacss": "^10.0.0",
     "stylelint-config-standard-scss": "^11.1.0",
     "stylelint-selector-bem-pattern": "^3.0.1",
     "webpack-dev-server": "^3.11.3"
