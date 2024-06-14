@@ -39,8 +39,10 @@ group :development do
   gem "haml_lint", require: false
   gem "listen"
   gem "rubocop"
+  gem "rubocop-capybara"
   gem "rubocop-rails"
   gem "rubocop-rspec"
+  gem "rubocop-rspec_rails"
   gem "spring"
   gem "spring-commands-rspec"
   gem "spring-watcher-listen"
