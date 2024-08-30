@@ -3,7 +3,7 @@
 class User < ApplicationRecord
   has_secure_password
 
-  enum role: { admin: "admin", viewer: "viewer" }
+  enum :role, { admin: "admin", viewer: "viewer" }
 
   has_many :questions, dependent: :restrict_with_exception
   has_many :answers, dependent: :restrict_with_exception
