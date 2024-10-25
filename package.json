@@ -6,10 +6,10 @@
   },
   "version": "0.1.0",
   "dependencies": {
-    "@rails/actioncable": "^7.2.100",
-    "@rails/actiontext": "^7.2.100",
-    "@rails/activestorage": "^7.2.0",
-    "@rails/ujs": "~7.1.400",
+    "@rails/actioncable": "^7.2.101",
+    "@rails/actiontext": "^7.2.101",
+    "@rails/activestorage": "^7.2.101",
+    "@rails/ujs": "~7.1.401",
     "@rails/webpacker": "^5.4.4",
     "trix": "^2.1.6",
     "turbolinks": "^5.2.0"
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "postcss": "^8.4.47",
-    "stylelint": "^16.9.0",
+    "stylelint": "^16.10.0",
     "stylelint-config-property-sort-order-smacss": "^10.0.0",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-selector-bem-pattern": "^4.0.1",
