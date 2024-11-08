@@ -6,12 +6,12 @@
   },
   "version": "0.1.0",
   "dependencies": {
-    "@rails/actioncable": "^7.2.102",
-    "@rails/actiontext": "^7.2.102",
-    "@rails/activestorage": "^7.2.102",
-    "@rails/ujs": "~7.1.402",
+    "@rails/actioncable": "^7.2.200",
+    "@rails/actiontext": "^7.2.200",
+    "@rails/activestorage": "^7.2.200",
+    "@rails/ujs": "~7.1.500",
     "@rails/webpacker": "^5.4.4",
-    "trix": "^2.1.6",
+    "trix": "^2.1.8",
     "turbolinks": "^5.2.0"
   },
   "//": {
