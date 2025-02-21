@@ -3,9 +3,7 @@
 module SystemHelpers
   include ActionText::SystemTestHelper
 
-  def t(key)
-    I18n.t(key)
-  end
+  delegate :t, to: :I18n
 
   def user_params
     {
