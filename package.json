@@ -17,16 +17,19 @@
     "postcss": "dep of stylelint-config-standard-scss, can maybe remove later"
   },
   "devDependencies": {
+    "@types/rails__actioncable": "^6.1.11",
     "esbuild": "^0.25.0",
     "postcss": "^8.5.6",
     "stylelint": "^17.0.0",
     "stylelint-config-property-sort-order-smacss": "^11.0.0",
     "stylelint-config-standard-scss": "^17.0.0",
-    "stylelint-selector-bem-pattern": "^4.0.1"
+    "stylelint-selector-bem-pattern": "^4.0.1",
+    "typescript": "^5.8.3"
   },
   "scripts": {
-    "build": "esbuild app/javascript/application.js --bundle --sourcemap --format=iife --outdir=app/assets/builds --public-path=/assets",
+    "build": "esbuild app/javascript/application.ts --bundle --sourcemap --format=iife --outdir=app/assets/builds --public-path=/assets",
     "build:watch": "esbuild app/javascript/application.js --bundle --sourcemap --format=iife --outdir=app/assets/builds --public-path=/assets --watch",
-    "stylelint": "./node_modules/stylelint/bin/stylelint.mjs 'app/assets/stylesheets/**/*'"
+    "stylelint": "./node_modules/stylelint/bin/stylelint.mjs 'app/assets/stylesheets/**/*'",
+    "tscheck": "yarn tsc --noEmit"
   }
 }
