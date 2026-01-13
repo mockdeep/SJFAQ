@@ -12,7 +12,6 @@ gem "bootsnap", require: false
 gem "haml-rails"
 gem "nokogiri", "~> 1.19.0" # for Ruby 3.2
 gem "pg"
-gem "pry-rails"
 gem "puma", "~> 7.0"
 gem "sass-rails"
 gem "sidekiq"
@@ -24,9 +23,7 @@ gem "webpacker"
 
 group :development, :test do
   gem "bundler-audit"
-  gem "byebug"
   gem "faker"
-  gem "pry-byebug"
   gem "rspec-rails"
 end
 

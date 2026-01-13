@@ -90,7 +90,6 @@ GEM
     bundler-audit (0.9.3)
       bundler (>= 1.2.0)
       thor (~> 1.0)
-    byebug (12.0.0)
     capybara (3.40.0)
       addressable
       matrix
@@ -230,11 +229,6 @@ GEM
     pry (0.15.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    pry-byebug (3.11.0)
-      byebug (~> 12.0)
-      pry (>= 0.13, < 0.16)
-    pry-rails (0.3.11)
-      pry (>= 0.13.0)
     psych (5.3.1)
       date
       stringio
@@ -449,7 +443,6 @@ DEPENDENCIES
   bootsnap
   brakeman
   bundler-audit
-  byebug
   capybara
   capybara-screenshot
   faker
@@ -462,8 +455,6 @@ DEPENDENCIES
   listen
   nokogiri (~> 1.19.0)
   pg
-  pry-byebug
-  pry-rails
   puma (~> 7.0)
   rails (~> 8.1.0)
   rspec-rails
@@ -488,7 +479,7 @@ DEPENDENCIES
   webpacker
 
 RUBY VERSION
-   ruby 3.4.8
+  ruby 4.0.0
 
 BUNDLED WITH
-   2.5.11
+  4.0.3
