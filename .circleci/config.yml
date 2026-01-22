@@ -29,7 +29,7 @@ jobs:
           install-chromedriver: false
 
       - node/install:
-          node-version: 16.14.0
+          node-version: 24.13.0
           install-yarn: true
 
       - run:
@@ -72,6 +72,10 @@ jobs:
           key: yarn-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
+
+      - run:
+          name: Compile webpack assets
+          command: NODE_OPTIONS=--openssl-legacy-provider RAILS_ENV=test bundle exec rails webpacker:clobber webpacker:compile
 
       - run:
           name: Wait for DB
