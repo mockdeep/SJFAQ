@@ -12,7 +12,11 @@ HEADING = <<~COMMENTS.freeze
 COMMENTS
 
 File.write(TODO_FILE_PATH, "{}")
+<<<<<<< HEAD
 json = `yarn --silent stylelint --formatter json 2>&1`
+=======
+json = `pnpm stylelint --quiet-deprecation-warnings --formatter json 2>&1`
+>>>>>>> e21d1af (switch from yarn to pnpm (#1331))
 results = JSON.parse(json)
 
 by_rule =
