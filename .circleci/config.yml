@@ -102,6 +102,10 @@ jobs:
           command: bundle exec exe/eslint_autogen
 
       - run:
+          name: Vitest
+          command: yarn vitest run --coverage
+
+      - run:
           name: Brakeman
           command: bundle exec brakeman
 
