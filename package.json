@@ -10,7 +10,6 @@
     "@rails/actiontext": "^8.1.200",
     "@rails/activestorage": "^8.1.200",
     "@rails/ujs": "~7.1.600",
-    "@rails/webpacker": "^5.4.4",
     "trix": "^2.1.16",
     "turbolinks": "^5.2.0"
   },
@@ -18,14 +17,16 @@
     "postcss": "dep of stylelint-config-standard-scss, can maybe remove later"
   },
   "devDependencies": {
+    "esbuild": "^0.25.0",
     "postcss": "^8.5.6",
     "stylelint": "^17.0.0",
     "stylelint-config-property-sort-order-smacss": "^11.0.0",
     "stylelint-config-standard-scss": "^17.0.0",
-    "stylelint-selector-bem-pattern": "^4.0.1",
-    "webpack-dev-server": "^5.2.2"
+    "stylelint-selector-bem-pattern": "^4.0.1"
   },
   "scripts": {
+    "build": "esbuild app/javascript/application.js --bundle --sourcemap --format=iife --outdir=app/assets/builds --public-path=/assets",
+    "build:watch": "esbuild app/javascript/application.js --bundle --sourcemap --format=iife --outdir=app/assets/builds --public-path=/assets --watch",
     "stylelint": "./node_modules/stylelint/bin/stylelint.mjs 'app/assets/stylesheets/**/*'"
   }
 }
