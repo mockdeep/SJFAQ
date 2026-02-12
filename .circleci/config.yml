@@ -74,8 +74,8 @@ jobs:
             - ~/.cache/yarn
 
       - run:
-          name: Compile webpack assets
-          command: NODE_OPTIONS=--openssl-legacy-provider RAILS_ENV=test bundle exec rails webpacker:clobber webpacker:compile
+          name: Build JavaScript
+          command: yarn build
 
       - run:
           name: Wait for DB
