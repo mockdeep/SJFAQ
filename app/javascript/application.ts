@@ -1,0 +1,6 @@
+import "@rails/ujs"
+import "turbolinks"
+import "@rails/activestorage"
+import "@rails/actioncable"
+import "trix"
+import "@rails/actiontext"
