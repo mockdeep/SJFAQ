@@ -30,11 +30,16 @@ jobs:
 
       - node/install:
           node-version: 25.6.0
-          install-yarn: true
+
+      - node/install-packages:
+          pkg-manager: pnpm
 
       - run:
-          name: Which bundler?
-          command: bundle -v
+          name: Which versions?
+          command: |
+            bundle -v
+            node --version
+            pnpm --version
 
       # https://circleci.com/docs/2.0/caching/
       - restore_cache:
@@ -55,28 +60,6 @@ jobs:
           paths:
             - vendor/bundle
 
-      - restore_cache:
-          keys:
-            - yarn-{{ checksum "yarn.lock" }}
-            - yarn-
-
-      - run:
-          name: Yarn Install
-          command: yarn install --cache-folder ~/.cache/yarn --ignore-engines
-
-      # - run:
-      #     name: Yarn Audit
-      #     command: yarn audit
-
-      - save_cache:
-          key: yarn-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
-
-      - run:
-          name: Build JavaScript
-          command: yarn build
-
       - run:
           name: Wait for DB
           command: dockerize -wait tcp://localhost:5432 -timeout 1m
@@ -87,15 +70,15 @@ jobs:
 
       - run:
           name: Typescript
-          command: yarn tscheck
+          command: pnpm tscheck
 
       - run:
           name: Find Unused ESLint Rules
-          command: yarn eslint_find_unused_rules
+          command: pnpm eslint_find_unused_rules
 
       - run:
           name: ESLint
-          command: yarn eslint
+          command: pnpm eslint
 
       - run:
           name: Verify ESLint Autogen
@@ -107,7 +90,7 @@ jobs:
 
       - run:
           name: Stylelint
-          command: yarn stylelint
+          command: pnpm stylelint
 
       - run:
           name: Verify Stylelint Autogen

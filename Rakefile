@@ -12,8 +12,8 @@ if Rails.env.local?
   require "haml_lint/rake_task"
   HamlLint::RakeTask.new
 
-  task("yarn:audit") do
-    sh("yarn audit")
+  task("pnpm:audit") do
+    sh("pnpm audit")
   end
 
   task(:brakeman) do
@@ -21,13 +21,12 @@ if Rails.env.local?
   end
 
   task(:stylelint) do
-    sh("yarn stylelint")
+    sh("pnpm stylelint")
   end
 
   task(
     lint: [
-      "yarn:install",
-      "yarn:audit",
+      "pnpm:audit",
       "bundle:audit",
       :brakeman,
       :rubocop,
