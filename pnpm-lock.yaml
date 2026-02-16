@@ -40,8 +40,8 @@ importers:
         specifier: ^25.2.3
         version: 25.2.3
       '@types/rails__actioncable':
-        specifier: ^6.1.11
-        version: 6.1.11
+        specifier: ^8.0.3
+        version: 8.0.3
       '@vitest/coverage-v8':
         specifier: 4.0.18
         version: 4.0.18(vitest@4.0.18(@types/node@25.2.3)(jiti@2.6.1)(jsdom@28.0.0))
@@ -802,8 +802,8 @@ packages:
   '@types/node@25.2.3':
     resolution: {integrity: sha512-m0jEgYlYz+mDJZ2+F4v8D1AyQb+QzsNqRuI7xg1VQX/KlKS0qT9r1Mo16yo5F/MtifXFgaofIFsdFMox2SxIbQ==}
 
-  '@types/rails__actioncable@6.1.11':
-    resolution: {integrity: sha512-L6A3Rg6sGsv2cqalOgdOmyFvL1Pw69Mg0WuG6NtY9chzabhtkiSFY5fczo72mqRGezrMvl0Jy80v+N719CW+Tg==}
+  '@types/rails__actioncable@8.0.3':
+    resolution: {integrity: sha512-y46MOTYorVQVwlHUyaZYbrh3nIkXsRYNuPna32lb3RngLVBlndNbIPvAUywFfhivftNhYg+vW5sZKWYCVIX2lA==}
 
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
@@ -3210,7 +3210,7 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  '@types/rails__actioncable@6.1.11': {}
+  '@types/rails__actioncable@8.0.3': {}
 
   '@types/trusted-types@2.0.7':
     optional: true
