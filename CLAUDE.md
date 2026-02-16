@@ -137,7 +137,7 @@ add_question("What is the meaning of life?")
 
 - BEM pattern validation enabled
 - Property sort order follows SMACSS methodology
-- Run with: `yarn stylelint`
+- Run with: `pnpm stylelint`
 
 ### Other Tools
 
