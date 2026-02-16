@@ -1,4 +1,4 @@
-import {beforeEach} from "vitest";
+/// <reference types="vitest/globals" />
 
 beforeEach(() => {
   document.body.textContent = "";
