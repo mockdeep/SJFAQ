@@ -16,10 +16,9 @@ gem "pg"
 gem "puma", "~> 7.0"
 gem "sass-rails"
 gem "sidekiq"
+gem "stimulus-rails"
 gem "strong_migrations"
-gem "turbolinks"
-# Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+gem "turbo-rails"
 
 group :development, :test do
   gem "bundler-audit"
