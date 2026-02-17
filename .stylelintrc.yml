@@ -1,6 +1,6 @@
 extends:
   - stylelint-config-property-sort-order-smacss
-  - stylelint-config-standard-scss
+  - stylelint-config-standard
   - ./.stylelint_wishlist.yml
   - ./.stylelint_todo.yml
 plugins:
