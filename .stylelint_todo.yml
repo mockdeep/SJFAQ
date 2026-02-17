@@ -8,15 +8,10 @@ overrides:
   # Offense count: 10
   - rules: { 'order/properties-order': null }
     files:
-    - app/assets/stylesheets/application.scss
+    - app/assets/stylesheets/application.css
 
   # Offense count: 23
   - rules: { 'plugin/selector-bem-pattern': null }
     files:
-    - app/assets/stylesheets/actiontext.scss
-    - app/assets/stylesheets/application.scss
-
-  # Offense count: 2
-  - rules: { 'scss/comment-no-empty': null }
-    files:
-    - app/assets/stylesheets/actiontext.scss
+    - app/assets/stylesheets/actiontext.css
+    - app/assets/stylesheets/application.css

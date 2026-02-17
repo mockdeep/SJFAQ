@@ -14,7 +14,7 @@ Justice.Garden (codename: SJFAQ) is a Rails web application for managing questio
 - **Database**: PostgreSQL 10.18
 - **Background Jobs**: Sidekiq with ActiveJob
 - **Testing**: RSpec with 100% code coverage requirement
-- **Frontend**: HAML templates, SCSS, Webpack/Webpacker, Turbolinks
+- **Frontend**: HAML templates, CSS (via cssbundling-rails + esbuild), Turbolinks
 
 ## Code Style Conventions
 
@@ -210,7 +210,7 @@ bundle exec guard
 1. Write system/integration tests first
 2. Implement controllers (keep thin)
 3. Create HAML views
-4. Add SCSS following BEM pattern
+4. Add CSS following BEM pattern
 5. Run all linters and tests
 6. Verify 100% coverage maintained
 
@@ -227,7 +227,7 @@ bundle exec guard
 - **Models**: `/app/models` (Null Objects in `/app/models/nulls`)
 - **Controllers**: `/app/controllers`
 - **Views**: `/app/views` (HAML only)
-- **Stylesheets**: `/app/assets/stylesheets` (SCSS)
+- **Stylesheets**: `/app/assets/stylesheets` (CSS)
 - **JavaScript**: `/app/javascript/packs` (Webpack entry points)
 - **Tests**: `/spec`
 - **Config**: `/config`
@@ -236,7 +236,7 @@ bundle exec guard
 ## Important Files
 
 - `.rubocop.yml`: Ruby style configuration
-- `.stylelintrc.yml`: CSS/SCSS linting configuration
+- `.stylelintrc.yml`: CSS linting configuration
 - `.haml-lint.yml`: HAML linting configuration
 - `Guardfile`: Auto-run configuration
 - `.circleci/config.yml`: CI/CD pipeline

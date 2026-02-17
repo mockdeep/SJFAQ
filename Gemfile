@@ -9,13 +9,14 @@ gem "rails", "~> 8.1.0"
 
 gem "bcrypt"
 gem "bootsnap", require: false
+gem "cssbundling-rails"
 gem "haml-rails"
 gem "jsbundling-rails"
 gem "nokogiri", "~> 1.19.0" # for Ruby 3.2
 gem "pg"
 gem "puma", "~> 7.0"
-gem "sass-rails"
 gem "sidekiq"
+gem "sprockets-rails"
 gem "stimulus-rails"
 gem "strong_migrations"
 gem "turbo-rails"
