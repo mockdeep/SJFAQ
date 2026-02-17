@@ -10,6 +10,7 @@ gem "rails", "~> 8.1.0"
 gem "bcrypt"
 gem "bootsnap", require: false
 gem "cssbundling-rails"
+gem "goldiloader"
 gem "haml-rails"
 gem "jsbundling-rails"
 gem "nokogiri", "~> 1.19.0" # for Ruby 3.2

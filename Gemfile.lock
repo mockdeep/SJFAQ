@@ -126,6 +126,9 @@ GEM
       reline
     globalid (1.3.0)
       activesupport (>= 6.1)
+    goldiloader (6.0.0)
+      activerecord (>= 7.2, < 8.3)
+      activesupport (>= 7.2, < 8.3)
     guard (2.20.1)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
@@ -436,6 +439,7 @@ DEPENDENCIES
   capybara-screenshot
   cssbundling-rails
   faker
+  goldiloader
   guard
   guard-haml_lint
   guard-rspec
