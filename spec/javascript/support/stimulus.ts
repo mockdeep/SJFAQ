@@ -2,7 +2,7 @@ import {afterEach} from "vitest";
 import type {Context, Controller} from "@hotwired/stimulus";
 import {Application} from "@hotwired/stimulus";
 
-import {assert} from "javascript/helpers";
+import {assert} from "helpers/assert";
 
 let application: Application | null = null;
 
