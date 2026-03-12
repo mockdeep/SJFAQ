@@ -22,13 +22,13 @@ importers:
         version: 8.1.200
       '@rails/actiontext':
         specifier: ^8.1.200
-        version: 8.1.200(trix@2.1.16)
+        version: 8.1.200(trix@2.1.17)
       '@rails/activestorage':
         specifier: ^8.1.200
         version: 8.1.200
       trix:
-        specifier: ^2.1.16
-        version: 2.1.16
+        specifier: ^2.1.17
+        version: 2.1.17
     devDependencies:
       '@babel/core':
         specifier: ^7.28.5
@@ -2798,8 +2798,8 @@ packages:
     resolution: {integrity: sha512-bLVMLPtstlZ4iMQHpFHTR7GAGj2jxi8Dg0s2h2MafAE4uSWF98FC/3MomU51iQAMf8/qDUbKWf5GxuvvVcXEhw==}
     engines: {node: '>=20'}
 
-  trix@2.1.16:
-    resolution: {integrity: sha512-XtZgWI+oBvLzX7CWnkIf+ZWC+chL+YG/TkY43iMTV0Zl+CJjn18B1GJUCEWJ8qgfpcyMBuysnNAfPWiv2sV14A==}
+  trix@2.1.17:
+    resolution: {integrity: sha512-nkHg7VgIItGVx1CFA645dDlAoCgah+9gv80Yc+97aS8jkZmO5K4MxkSqmU9t/C8upqZB8uhfJs90epoDfYz/6Q==}
     engines: {node: '>= 18'}
 
   ts-api-utils@2.4.0:
@@ -3999,10 +3999,10 @@ snapshots:
 
   '@rails/actioncable@8.1.200': {}
 
-  '@rails/actiontext@8.1.200(trix@2.1.16)':
+  '@rails/actiontext@8.1.200(trix@2.1.17)':
     dependencies:
       '@rails/activestorage': 8.1.200
-      trix: 2.1.16
+      trix: 2.1.17
 
   '@rails/activestorage@8.1.200':
     dependencies:
@@ -5996,7 +5996,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  trix@2.1.16:
+  trix@2.1.17:
     dependencies:
       dompurify: 3.2.5
 

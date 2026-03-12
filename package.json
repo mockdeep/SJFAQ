@@ -13,7 +13,7 @@
     "@rails/actioncable": "^8.1.200",
     "@rails/actiontext": "^8.1.200",
     "@rails/activestorage": "^8.1.200",
-    "trix": "^2.1.16"
+    "trix": "^2.1.17"
   },
   "devDependencies": {
     "@babel/core": "^7.28.5",
