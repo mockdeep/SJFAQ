@@ -67,7 +67,11 @@ importers:
         specifier: ^1.6.12
         version: 1.6.12(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)(vitest@4.1.0(@types/node@25.5.0)(jsdom@28.1.0)(vite@8.0.0(@types/node@25.5.0)(esbuild@0.27.4)(jiti@2.6.1)))
       esbuild:
+<<<<<<< HEAD
         specifier: ^0.27.3
+=======
+        specifier: ^0.27.1
+>>>>>>> 27aadef (Update all pnpm dependencies (2026-03-16) (#1372))
         version: 0.27.4
       eslint:
         specifier: ^10.0.2
@@ -1135,9 +1139,12 @@ packages:
   '@types/rails__actioncable@8.0.3':
     resolution: {integrity: sha512-y46MOTYorVQVwlHUyaZYbrh3nIkXsRYNuPna32lb3RngLVBlndNbIPvAUywFfhivftNhYg+vW5sZKWYCVIX2lA==}
 
+<<<<<<< HEAD
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
 
+=======
+>>>>>>> 27aadef (Update all pnpm dependencies (2026-03-16) (#1372))
   '@typescript-eslint/eslint-plugin@8.57.0':
     resolution: {integrity: sha512-qeu4rTHR3/IaFORbD16gmjq9+rEs9fGKdX0kF6BKSfi+gCuG3RCKLlSBYzn/bGsY9Tj7KE/DAQStbp8AHJGHEQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -1462,11 +1469,14 @@ packages:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
 
+<<<<<<< HEAD
   browserslist@4.28.1:
     resolution: {integrity: sha512-ZC5Bd0LgJXgwGqUknZY/vkUQ04r8NXnJZ3yYi4vDmSiZmC/pdSN0NbNRPxZpbtO4uAfDUAFffO8IZoM3Gj8IkA==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
+=======
+>>>>>>> 27aadef (Update all pnpm dependencies (2026-03-16) (#1372))
   cacheable@2.3.3:
     resolution: {integrity: sha512-iffYMX4zxKp54evOH27fm92hs+DeC1DhXmNVN8Tr94M/iZIV42dqTHSR2Ik4TOSPyOAwKr7Yu3rN9ALoLkbWyQ==}
 
@@ -1512,9 +1522,12 @@ packages:
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
 
+<<<<<<< HEAD
   core-js-compat@3.48.0:
     resolution: {integrity: sha512-OM4cAF3D6VtH/WkLtWvyNC56EZVXsZdU3iqaMG2B4WvYrlqU831pc4UtG5yp0sE9z8Y02wVN7PjW5Zf9Gt0f1Q==}
 
+=======
+>>>>>>> 27aadef (Update all pnpm dependencies (2026-03-16) (#1372))
   cosmiconfig@9.0.1:
     resolution: {integrity: sha512-hr4ihw+DBqcvrsEDioRO31Z17x71pUYoNe/4h6Z0wB72p7MU7/9gH8Q3s12NFhHPfYBBOV3qyfUxmr/Yn3shnQ==}
     engines: {node: '>=14'}
@@ -4147,9 +4160,12 @@ snapshots:
 
   '@types/rails__actioncable@8.0.3': {}
 
+<<<<<<< HEAD
   '@types/trusted-types@2.0.7':
     optional: true
 
+=======
+>>>>>>> 27aadef (Update all pnpm dependencies (2026-03-16) (#1372))
   '@typescript-eslint/eslint-plugin@8.57.0(@typescript-eslint/parser@8.57.0(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3))(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
@@ -4511,6 +4527,7 @@ snapshots:
     dependencies:
       fill-range: 7.1.1
 
+<<<<<<< HEAD
   browserslist@4.28.1:
     dependencies:
       baseline-browser-mapping: 2.10.8
@@ -4521,6 +4538,10 @@ snapshots:
 
   cacheable@2.3.3:
     dependencies:
+=======
+  cacheable@2.3.3:
+    dependencies:
+>>>>>>> 27aadef (Update all pnpm dependencies (2026-03-16) (#1372))
       '@cacheable/memory': 2.0.8
       '@cacheable/utils': 2.4.0
       hookified: 1.15.1
@@ -4568,10 +4589,13 @@ snapshots:
 
   convert-source-map@2.0.0: {}
 
+<<<<<<< HEAD
   core-js-compat@3.48.0:
     dependencies:
       browserslist: 4.28.1
 
+=======
+>>>>>>> 27aadef (Update all pnpm dependencies (2026-03-16) (#1372))
   cosmiconfig@9.0.1(typescript@5.9.3):
     dependencies:
       env-paths: 2.2.1
@@ -5483,10 +5507,13 @@ snapshots:
   lodash@4.17.23: {}
 
   lru-cache@11.2.7: {}
+<<<<<<< HEAD
 
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
+=======
+>>>>>>> 27aadef (Update all pnpm dependencies (2026-03-16) (#1372))
 
   magic-string@0.30.21:
     dependencies:
@@ -6115,6 +6142,7 @@ snapshots:
   undici-types@7.18.2: {}
 
   undici@7.24.4: {}
+<<<<<<< HEAD
 
   unicode-canonical-property-names-ecmascript@2.0.1: {}
 
@@ -6126,6 +6154,8 @@ snapshots:
   unicode-match-property-value-ecmascript@2.2.1: {}
 
   unicode-property-aliases-ecmascript@2.2.0: {}
+=======
+>>>>>>> 27aadef (Update all pnpm dependencies (2026-03-16) (#1372))
 
   unicorn-magic@0.4.0: {}
 

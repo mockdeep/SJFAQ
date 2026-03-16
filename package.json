@@ -28,7 +28,11 @@
     "@typescript-eslint/parser": "^8.56.0",
     "@vitest/coverage-v8": "^4.0.18",
     "@vitest/eslint-plugin": "^1.6.12",
+<<<<<<< HEAD
     "esbuild": "^0.27.3",
+=======
+    "esbuild": "^0.27.1",
+>>>>>>> 27aadef (Update all pnpm dependencies (2026-03-16) (#1372))
     "eslint": "^10.0.2",
     "eslint-find-rules": "^5.0.0",
     "eslint-import-resolver-typescript": "^4.4.4",
@@ -37,7 +41,10 @@
     "globals": "^17.4.0",
     "jiti": "^2.6.1",
     "jsdom": "^28.1.0",
+<<<<<<< HEAD
     "postcss": "^8.5.8",
+=======
+>>>>>>> 27aadef (Update all pnpm dependencies (2026-03-16) (#1372))
     "stylelint": "^17.4.0",
     "stylelint-config-recess-order": "^7.6.1",
     "stylelint-config-standard": "^40.0.0",
