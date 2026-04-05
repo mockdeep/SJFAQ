@@ -26,6 +26,13 @@ AllCops:
 #
 ################################################################################
 
+Style/ModuleFunction: { EnforcedStyle: extend_self }
+Layout/LineLength:
+  Max: 80
+  AutoCorrect: true
+  Exclude: ['config/**/*']
+Layout/MultilineMethodCallIndentation: { EnforcedStyle: indented }
+Layout/MultilineOperationIndentation: { EnforcedStyle: indented }
 Metrics/BlockLength:
   AllowedMethods:
     - configure
@@ -33,12 +40,9 @@ Metrics/BlockLength:
   Exclude:
     - Guardfile
     - db/schema.rb
+    - config/environments/development.rb
 # https://github.com/rubocop-hq/rubocop/issues/7841
 Style/TrailingCommaInBlockArgs: { Enabled: false }
-Layout/LineLength:
-  Max: 80
-  AutoCorrect: true
-  Exclude: ['config/**/*']
 Rails/FilePath: { EnforcedStyle: slashes }
 RSpec/MultipleExpectations:
   Exclude:
@@ -50,7 +54,6 @@ RSpec/MultipleMemoizedHelpers:
   Exclude:
     - spec/linters/rubocop/**/*.rb
 Style/ArrayFirstLast: { Exclude: [Guardfile] }
-Style/CommentedKeyword: { Enabled: false }
 Style/MethodCallWithArgsParentheses:
   AllowedMethods:
     - attr_accessor
@@ -122,9 +125,16 @@ I18n/RailsI18n/DecorateString:
 ################################################################################
 
 Bundler/GemComment: { Enabled: false }
+Capybara/AmbiguousClick: { Enabled: false }
+Layout/SingleLineBlockChain: { Enabled: false }
+Lint/ConstantResolution: { Enabled: false }
+Rails/OrderById: { Enabled: false }
 Rails/RakeEnvironment: { Enabled: false }
+Rails/RedundantPresenceValidationOnBelongsTo: { Enabled: false }
+Rails/SchemaComment: { Enabled: false }
 RSpec/AlignLeftLetBrace: { Enabled: false }
 RSpec/AlignRightLetBrace: { Enabled: false }
+Style/CommentedKeyword: { Enabled: false }
 Style/ConstantVisibility: { Enabled: false }
 Style/Copyright: { Enabled: false }
 Style/Documentation: { Enabled: false }

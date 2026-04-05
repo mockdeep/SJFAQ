@@ -4164,14 +4164,10 @@ snapshots:
 
   '@types/rails__actioncable@8.0.3': {}
 
-<<<<<<< HEAD
   '@types/trusted-types@2.0.7':
     optional: true
 
-  '@typescript-eslint/eslint-plugin@8.57.2(@typescript-eslint/parser@8.57.2(eslint@10.1.0(jiti@2.6.1))(typescript@5.9.3))(eslint@10.1.0(jiti@2.6.1))(typescript@5.9.3)':
-=======
   '@typescript-eslint/eslint-plugin@8.57.2(@typescript-eslint/parser@8.57.2(eslint@10.1.0(jiti@2.6.1))(typescript@6.0.2))(eslint@10.1.0(jiti@2.6.1))(typescript@6.0.2)':
->>>>>>> 70fbdce (Update typescript to version 6.0.2 (#1384))
     dependencies:
       '@eslint-community/regexpp': 4.12.2
       '@typescript-eslint/parser': 8.57.2(eslint@10.1.0(jiti@2.6.1))(typescript@6.0.2)
@@ -4638,15 +4634,11 @@ snapshots:
 
   convert-source-map@2.0.0: {}
 
-<<<<<<< HEAD
   core-js-compat@3.48.0:
     dependencies:
       browserslist: 4.28.1
 
-  cosmiconfig@9.0.1(typescript@5.9.3):
-=======
   cosmiconfig@9.0.1(typescript@6.0.2):
->>>>>>> 70fbdce (Update typescript to version 6.0.2 (#1384))
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
@@ -6089,15 +6081,11 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-<<<<<<< HEAD
   trix@2.1.18:
     dependencies:
       dompurify: 3.3.3
 
-  ts-api-utils@2.4.0(typescript@5.9.3):
-=======
   ts-api-utils@2.4.0(typescript@6.0.2):
->>>>>>> 70fbdce (Update typescript to version 6.0.2 (#1384))
     dependencies:
       typescript: 6.0.2
 

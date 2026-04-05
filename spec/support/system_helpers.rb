@@ -42,40 +42,40 @@ module SystemHelpers
   def sign_in_as(user)
     visit("/")
 
-    click_link("Log In")
+    click_on("Log In")
 
     expect(page).to have_text("Log in to Justice.Garden")
 
     fill_in("Email", with: user.email)
     fill_in("Password", with: user.password)
 
-    click_button("Log In")
+    click_on("Log In")
   end
 
   def add_question(text)
-    click_link(t("add_question"))
+    click_on(t("add_question"))
     fill_in("Text", with: text)
-    click_button(t("create_question"))
+    click_on(t("create_question"))
   end
 
   def add_answer(text, question_text:)
     expect(page).to have_text(question_text)
-    click_link(t("add_answer"))
+    click_on(t("add_answer"))
     fill_in_rich_text_area("answer_text", with: text)
-    click_button(t("create_answer"))
+    click_on(t("create_answer"))
   end
 
   def update_question(question_text, text:)
     expect(page).to have_text(question_text)
-    click_link(t("edit_question"))
+    click_on(t("edit_question"))
     fill_in("Text", with: text)
-    click_button(t("update_question"))
+    click_on(t("update_question"))
   end
 
   def update_answer(question_text, text:)
     expect(page).to have_text(question_text)
-    click_link(t("edit_answer"))
+    click_on(t("edit_answer"))
     fill_in_rich_text_area("answer_text", with: text)
-    click_button(t("update_answer"))
+    click_on(t("update_answer"))
   end
 end

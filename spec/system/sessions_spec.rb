@@ -6,14 +6,14 @@ RSpec.describe "user sessions", type: :system do
   def sign_in_with(email:, password:)
     visit("/")
 
-    click_link("Log In")
+    click_on("Log In")
 
     expect(page).to have_text("Log in to Justice.Garden")
 
     fill_in("Email", with: email)
     fill_in("Password", with: password)
 
-    click_button("Log In")
+    click_on("Log In")
   end
 
   it "allows a user to log into their account" do
@@ -51,7 +51,7 @@ RSpec.describe "user sessions", type: :system do
 
     sign_in_with(email: user.email, password: user.password)
 
-    click_link("Log Out")
+    click_on("Log Out")
 
     expect(page).to have_no_text(user.email)
     expect(page).to have_link("Log In")
