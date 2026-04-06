@@ -8,12 +8,19 @@
   "version": "0.1.0",
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
+<<<<<<< HEAD
     "@hotwired/turbo": "^8.0.20",
     "@hotwired/turbo-rails": "^8.0.20",
     "@rails/actioncable": "^8.1.200",
     "@rails/actiontext": "^8.1.200",
     "@rails/activestorage": "^8.1.200",
     "trix": "^2.1.18"
+=======
+    "@hotwired/turbo": "^8.0.21",
+    "@hotwired/turbo-rails": "^8.0.21",
+    "@rails/actioncable": "^8.1.300",
+    "@rails/activestorage": "^8.1.300"
+>>>>>>> 153603a (Update all pnpm dependencies (2026-04-06) (#1398))
   },
   "devDependencies": {
     "@babel/core": "^7.28.5",
@@ -37,8 +44,12 @@
     "globals": "^17.4.0",
     "jiti": "^2.6.1",
     "jsdom": "^29.0.1",
+<<<<<<< HEAD
     "postcss": "^8.5.8",
     "stylelint": "^17.4.0",
+=======
+    "stylelint": "^17.6.0",
+>>>>>>> 153603a (Update all pnpm dependencies (2026-04-06) (#1398))
     "stylelint-config-recess-order": "^7.7.0",
     "stylelint-config-standard": "^40.0.0",
     "stylelint-selector-bem-pattern": "^4.0.1",
