@@ -1,7 +1,15 @@
+require:
+  - ./linters/rubocop/cop/rspec/no_before_hook
+
 inherit_from: .rubocop_todo.yml
+
+inherit_mode:
+  merge:
+    - Exclude
 
 plugins:
   - rubocop-capybara
+  - rubocop-i18n
   - rubocop-rails
   - rubocop-rspec
   - rubocop-rspec_rails
@@ -36,7 +44,11 @@ RSpec/MultipleExpectations:
   Exclude:
     - spec/system/**/*.rb
 RSpec/MessageExpectation: { EnforcedStyle: expect }
-RSpec/MultipleMemoizedHelpers: { Max: 0, AllowSubject: false }
+RSpec/MultipleMemoizedHelpers:
+  Max: 0
+  AllowSubject: false
+  Exclude:
+    - spec/linters/rubocop/**/*.rb
 Style/ArrayFirstLast: { Exclude: [Guardfile] }
 Style/CommentedKeyword: { Enabled: false }
 Style/MethodCallWithArgsParentheses:
@@ -95,6 +107,13 @@ Style/TrailingCommaInArguments: { EnforcedStyleForMultiline: comma }
 Style/TrailingCommaInArrayLiteral: { EnforcedStyleForMultiline: comma }
 Style/TrailingCommaInHashLiteral: { EnforcedStyleForMultiline: comma }
 Style/WordArray: { EnforcedStyle: brackets }
+
+I18n/GetText/DecorateString:
+  Exclude:
+    - linters/**/*.rb
+I18n/RailsI18n/DecorateString:
+  Exclude:
+    - linters/**/*.rb
 
 ################################################################################
 #
