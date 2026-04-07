@@ -336,6 +336,9 @@ GEM
     rubocop-capybara (2.22.1)
       lint_roller (~> 1.1)
       rubocop (~> 1.72, >= 1.72.1)
+    rubocop-i18n (3.2.3)
+      lint_roller (~> 1.1)
+      rubocop (>= 1.72.1)
     rubocop-rails (2.34.3)
       activesupport (>= 4.2.0)
       lint_roller (~> 1.1)
@@ -455,6 +458,7 @@ DEPENDENCIES
   rspec-rails
   rubocop
   rubocop-capybara
+  rubocop-i18n
   rubocop-rails
   rubocop-rspec
   rubocop-rspec_rails
