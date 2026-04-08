@@ -1,4 +1,8 @@
 ruby 4.0.2
+<<<<<<< HEAD
 nodejs 25.8.1
+=======
+nodejs 25.9.0
+>>>>>>> 5cd5356 (Update Node.js to version 25.9.0 (#1401))
 postgres 16.8
 pnpm 10.5.2

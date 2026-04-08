@@ -29,7 +29,11 @@ jobs:
           install-chromedriver: false
 
       - node/install:
+<<<<<<< HEAD
           node-version: 25.8.1
+=======
+          node-version: 25.9.0
+>>>>>>> 5cd5356 (Update Node.js to version 25.9.0 (#1401))
 
       - node/install-packages:
           pkg-manager: pnpm
