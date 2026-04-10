@@ -15,7 +15,7 @@ gem "haml-rails"
 gem "jsbundling-rails"
 gem "nokogiri", "~> 1.19.0" # for Ruby 3.2
 gem "pg"
-gem "puma", "~> 7.0"
+gem "puma", "~> 8.0"
 gem "sidekiq"
 gem "sprockets-rails"
 gem "stimulus-rails"
