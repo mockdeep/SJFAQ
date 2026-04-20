@@ -93,9 +93,12 @@ importers:
       jsdom:
         specifier: ^29.0.2
         version: 29.0.2
+<<<<<<< HEAD
       postcss:
         specifier: ^8.5.9
         version: 8.5.9
+=======
+>>>>>>> 8050257 (Update all pnpm dependencies (2026-04-20) (#1407))
       stylelint:
         specifier: ^17.6.0
         version: 17.6.0(typescript@6.0.2)
@@ -4201,9 +4204,12 @@ snapshots:
 
   '@types/rails__actioncable@8.0.3': {}
 
+<<<<<<< HEAD
   '@types/trusted-types@2.0.7':
     optional: true
 
+=======
+>>>>>>> 8050257 (Update all pnpm dependencies (2026-04-20) (#1407))
   '@typescript-eslint/eslint-plugin@8.57.2(@typescript-eslint/parser@8.57.2(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2))(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
