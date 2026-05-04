@@ -37,7 +37,10 @@
     "globals": "^17.5.0",
     "jiti": "^2.6.1",
     "jsdom": "^29.0.2",
+<<<<<<< HEAD
     "postcss": "^8.5.13",
+=======
+>>>>>>> 11d3f48 (Update all pnpm dependencies (2026-05-04) (#1412))
     "stylelint": "^17.9.1",
     "stylelint-config-recess-order": "^7.7.0",
     "stylelint-config-standard": "^40.0.0",

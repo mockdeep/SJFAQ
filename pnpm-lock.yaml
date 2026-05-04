@@ -1145,9 +1145,12 @@ packages:
   '@types/rails__actioncable@8.0.3':
     resolution: {integrity: sha512-y46MOTYorVQVwlHUyaZYbrh3nIkXsRYNuPna32lb3RngLVBlndNbIPvAUywFfhivftNhYg+vW5sZKWYCVIX2lA==}
 
+<<<<<<< HEAD
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
 
+=======
+>>>>>>> 11d3f48 (Update all pnpm dependencies (2026-05-04) (#1412))
   '@typescript-eslint/eslint-plugin@8.59.1':
     resolution: {integrity: sha512-BOziFIfE+6osHO9FoJG4zjoHUcvI7fTNBSpdAwrNH0/TLvzjsk2oo8XSSOT2HhqUyhZPfHv4UOffoJ9oEEQ7Ag==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -2564,6 +2567,13 @@ packages:
 
   postcss@8.5.13:
     resolution: {integrity: sha512-qif0+jGGZoLWdHey3UFHHWP0H7Gbmsk8T5VEqyYFbWqPr1XqvLGBbk/sl8V5exGmcYJklJOhOQq1pV9IcsiFag==}
+<<<<<<< HEAD
+=======
+    engines: {node: ^10 || ^12 || >=14}
+
+  postcss@8.5.8:
+    resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
+>>>>>>> 11d3f48 (Update all pnpm dependencies (2026-05-04) (#1412))
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -2867,10 +2877,13 @@ packages:
     resolution: {integrity: sha512-bLVMLPtstlZ4iMQHpFHTR7GAGj2jxi8Dg0s2h2MafAE4uSWF98FC/3MomU51iQAMf8/qDUbKWf5GxuvvVcXEhw==}
     engines: {node: '>=20'}
 
+<<<<<<< HEAD
   trix@2.1.18:
     resolution: {integrity: sha512-DWOdTsz3n9PO3YBc1R6pGh9MG1cXys/2+rouc/qsISncjc2MBew2UOW8nXh3NjUOjobKsXCIPR6LB02abg2EYg==}
     engines: {node: '>= 18'}
 
+=======
+>>>>>>> 11d3f48 (Update all pnpm dependencies (2026-05-04) (#1412))
   ts-api-utils@2.5.0:
     resolution: {integrity: sha512-OJ/ibxhPlqrMM0UiNHJ/0CKQkoKF243/AEmplt3qpRgkW8VG7IfOS41h7V8TjITqdByHzrjcS/2si+y4lIh8NA==}
     engines: {node: '>=18.12'}
@@ -4195,9 +4208,12 @@ snapshots:
 
   '@types/rails__actioncable@8.0.3': {}
 
+<<<<<<< HEAD
   '@types/trusted-types@2.0.7':
     optional: true
 
+=======
+>>>>>>> 11d3f48 (Update all pnpm dependencies (2026-05-04) (#1412))
   '@typescript-eslint/eslint-plugin@8.59.1(@typescript-eslint/parser@8.59.1(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
@@ -5738,6 +5754,15 @@ snapshots:
   postcss-value-parser@4.2.0: {}
 
   postcss@8.5.13:
+<<<<<<< HEAD
+=======
+    dependencies:
+      nanoid: 3.3.11
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
+  postcss@8.5.8:
+>>>>>>> 11d3f48 (Update all pnpm dependencies (2026-05-04) (#1412))
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -6014,8 +6039,13 @@ snapshots:
   stylelint-selector-bem-pattern@4.0.1(stylelint@17.9.1(typescript@6.0.3)):
     dependencies:
       lodash: 4.17.23
+<<<<<<< HEAD
       postcss: 8.5.13
       postcss-bem-linter: 4.0.1(postcss@8.5.13)
+=======
+      postcss: 8.5.8
+      postcss-bem-linter: 4.0.1(postcss@8.5.8)
+>>>>>>> 11d3f48 (Update all pnpm dependencies (2026-05-04) (#1412))
       stylelint: 17.9.1(typescript@6.0.3)
 
   stylelint@17.9.1(typescript@6.0.3):
@@ -6114,10 +6144,13 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
+<<<<<<< HEAD
   trix@2.1.18:
     dependencies:
       dompurify: 3.3.3
 
+=======
+>>>>>>> 11d3f48 (Update all pnpm dependencies (2026-05-04) (#1412))
   ts-api-utils@2.5.0(typescript@6.0.3):
     dependencies:
       typescript: 6.0.3
