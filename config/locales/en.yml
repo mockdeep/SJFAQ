@@ -38,3 +38,16 @@ en:
   create_question: Create Question
   update_answer: Update Answer
   update_question: Update Question
+  accounts:
+    create:
+      success: "Account created successfully"
+      error: "There was a problem setting up your account"
+    update:
+      success: "Account updated successfully"
+      error: "There was a problem updating your account"
+    destroy:
+      success: "Account permanently deleted"
+      error: "Account could not be deleted"
+  sessions:
+    create:
+      error: "Invalid email or password"

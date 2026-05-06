@@ -13,30 +13,6 @@ Bundler/GemVersion:
   Exclude:
     - 'Gemfile'
 
-# Offense count: 2
-# This cop supports safe autocorrection (--autocorrect).
-I18n/GetText/DecorateFunctionMessage:
-  Exclude:
-    - 'spec/support/capybara/rack_test.rb'
-    - 'spec/support/matchers/change_record.rb'
-
-# Offense count: 18
-# This cop supports safe autocorrection (--autocorrect).
-I18n/GetText/DecorateString:
-  Exclude:
-    - 'spec/rails_helper.rb'
-    - 'spec/system/account_spec.rb'
-    - 'spec/system/answers_spec.rb'
-    - 'spec/system/questions_spec.rb'
-
-# Offense count: 18
-I18n/RailsI18n/DecorateString:
-  Exclude:
-    - 'spec/rails_helper.rb'
-    - 'spec/system/account_spec.rb'
-    - 'spec/system/answers_spec.rb'
-    - 'spec/system/questions_spec.rb'
-
 # Offense count: 3
 # This cop supports safe autocorrection (--autocorrect).
 Layout/EmptyLineAfterMagicComment:
@@ -73,12 +49,6 @@ Rails/Env:
     - 'Rakefile'
     - 'lib/route_constraints/admin_constraint.rb'
     - 'spec/rails_helper.rb'
-
-# Offense count: 7
-Rails/I18nLocaleTexts:
-  Exclude:
-    - 'app/controllers/accounts_controller.rb'
-    - 'app/controllers/sessions_controller.rb'
 
 # Offense count: 1
 # This cop supports unsafe autocorrection (--autocorrect-all).
