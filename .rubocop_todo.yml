@@ -13,14 +13,6 @@ Bundler/GemVersion:
   Exclude:
     - 'Gemfile'
 
-# Offense count: 3
-# This cop supports safe autocorrection (--autocorrect).
-Layout/EmptyLineAfterMagicComment:
-  Exclude:
-    - 'config/initializers/content_security_policy.rb'
-    - 'config/initializers/inflections.rb'
-    - 'config/initializers/permissions_policy.rb'
-
 # Offense count: 1
 # Configuration parameters: Mode, AllowedMethods, AllowedPatterns, AllowBangMethods, WaywardPredicates.
 # AllowedMethods: call
