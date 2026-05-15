@@ -2,13 +2,13 @@
 
 class AnswersController < ApplicationController
   def new
-    question = Question.find(params[:question_id])
+    question = Question.find(params.expect(:question_id))
 
     render(:new, locals: { question: question })
   end
 
   def edit
-    render(locals: { answer: Answer.find(params[:id]) })
+    render(locals: { answer: Answer.find(params.expect(:id)) })
   end
 
   def create
@@ -18,7 +18,7 @@ class AnswersController < ApplicationController
   end
 
   def update
-    answer = Answer.find(params[:id])
+    answer = Answer.find(params.expect(:id))
     answer.update!(answer_params)
     redirect_to(root_path)
   end

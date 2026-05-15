@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
   def new; end
 
   def edit
-    render(locals: { question: Question.find(params[:id]) })
+    render(locals: { question: Question.find(params.expect(:id)) })
   end
 
   def create
@@ -13,7 +13,7 @@ class QuestionsController < ApplicationController
   end
 
   def update
-    question = Question.find(params[:id])
+    question = Question.find(params.expect(:id))
     question.update!(question_params)
     redirect_to(root_path)
   end
