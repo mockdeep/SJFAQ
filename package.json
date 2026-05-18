@@ -13,7 +13,7 @@
     "@rails/actioncable": "^8.1.300",
     "@rails/actiontext": "^8.1.300",
     "@rails/activestorage": "^8.1.300",
-    "trix": "^2.1.18"
+    "trix": "^2.1.19"
   },
   "devDependencies": {
     "@babel/core": "^7.28.5",
@@ -27,7 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^8.59.1",
     "@typescript-eslint/parser": "^8.59.1",
     "@vitest/coverage-v8": "^4.1.5",
-    "@vitest/eslint-plugin": "^1.6.16",
+    "@vitest/eslint-plugin": "^1.6.17",
     "esbuild": "^0.28.0",
     "eslint": "^10.3.0",
     "eslint-find-rules": "^5.0.0",
@@ -35,7 +35,7 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-perfectionist": "^5.9.0",
     "globals": "^17.6.0",
-    "jiti": "^2.6.1",
+    "jiti": "^2.7.0",
     "jsdom": "^29.1.1",
     "postcss": "^8.5.14",
     "stylelint": "^17.9.1",
