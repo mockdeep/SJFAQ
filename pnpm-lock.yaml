@@ -106,8 +106,8 @@ importers:
         specifier: ^40.0.0
         version: 40.0.0(stylelint@17.9.1(typescript@6.0.3))
       stylelint-selector-bem-pattern:
-        specifier: ^4.0.1
-        version: 4.0.1(stylelint@17.9.1(typescript@6.0.3))
+        specifier: ^5.0.0
+        version: 5.0.0(stylelint@17.9.1(typescript@6.0.3))
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
@@ -2332,9 +2332,6 @@ packages:
   lodash.truncate@4.4.2:
     resolution: {integrity: sha512-jttmRe7bRse52OsWIMDLaXxWqRAmtIUccAQ3garviCqJjafXOfNMO0yMfNpdD6zbGaTU0P5Nz7e7gAT6cKmJRw==}
 
-  lodash@4.17.23:
-    resolution: {integrity: sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==}
-
   lru-cache@11.3.6:
     resolution: {integrity: sha512-Gf/KoL3C/MlI7Bt0PGI9I+TeTC/I6r/csU58N4BSNc4lppLBeKsOdFYkK+dX0ABDUMJNfCHTyPpzwwO21Awd3A==}
     engines: {node: 20 || >=22}
@@ -2761,11 +2758,11 @@ packages:
     peerDependencies:
       stylelint: ^16.18.0 || ^17.0.0
 
-  stylelint-selector-bem-pattern@4.0.1:
-    resolution: {integrity: sha512-zpyC52/aqwbxbtliyTKdV3gv+h/ExZUTIn7tKMt9nfILtMhYIeJNF5a3UE1dtv9L826ulXU+83YA83Ymx3jW0A==}
-    engines: {node: '>=18.12.0'}
+  stylelint-selector-bem-pattern@5.0.0:
+    resolution: {integrity: sha512-nXcfLw2mZkNCyTLYPESavGLfWhY1RrjzsjVufbpKsMTH65WeOYGwouB3yqyV8l4WtKMVniz29LlELJcJ0d660A==}
+    engines: {node: '>=24.13.0'}
     peerDependencies:
-      stylelint: ^16.2.1
+      stylelint: ^17.0.0
 
   stylelint@17.9.1:
     resolution: {integrity: sha512-THTmnAPJTrg/JhkTWZlSyrO+HUYMx6ELthIHeMyD2WOKqXIJUFQv2Yxn91bvUrZdbBJaW2dUuQdPST2wcQ6C3g==}
@@ -5479,8 +5476,6 @@ snapshots:
 
   lodash.truncate@4.4.2: {}
 
-  lodash@4.17.23: {}
-
   lru-cache@11.3.6: {}
 
   lru-cache@5.1.1:
@@ -5932,9 +5927,8 @@ snapshots:
       postcss-sorting: 9.1.0(postcss@8.5.14)
       stylelint: 17.9.1(typescript@6.0.3)
 
-  stylelint-selector-bem-pattern@4.0.1(stylelint@17.9.1(typescript@6.0.3)):
+  stylelint-selector-bem-pattern@5.0.0(stylelint@17.9.1(typescript@6.0.3)):
     dependencies:
-      lodash: 4.17.23
       postcss: 8.5.14
       postcss-bem-linter: 4.0.1(postcss@8.5.14)
       stylelint: 17.9.1(typescript@6.0.3)
