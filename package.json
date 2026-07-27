@@ -38,7 +38,7 @@
     "jiti": "^2.7.0",
     "jsdom": "^29.1.1",
     "postcss": "^8.5.23",
-    "stylelint": "^17.14.0",
+    "stylelint": "^17.14.1",
     "stylelint-config-recess-order": "^7.7.0",
     "stylelint-config-standard": "^40.0.0",
     "stylelint-selector-bem-pattern": "^5.0.0",
