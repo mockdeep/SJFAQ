@@ -29,7 +29,9 @@ jobs:
           install-chromedriver: false
 
       - node/install:
-          node-version: 25.8.1
+          node-version: 26.7.0
+          install-pnpm: true
+          pnpm-version: 11.24.0
 
       - node/install-packages:
           pkg-manager: pnpm
