@@ -11,6 +11,7 @@ gem "bcrypt"
 gem "bootsnap", require: false
 gem "cssbundling-rails"
 gem "goldiloader"
+gem "good_job"
 gem "haml-rails"
 gem "jsbundling-rails"
 gem "nokogiri", "~> 1.19.0" # for Ruby 3.2

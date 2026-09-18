@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   resources :questions, only: [:new, :create, :edit, :update] do
     resources :answers, only: [:new, :create, :edit, :update], shallow: true
   end
+
+  constraints AdminConstraint.new do
+    mount GoodJob::Engine, at: "good_job"
+  end
 end
