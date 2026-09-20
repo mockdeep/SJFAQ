@@ -11,8 +11,8 @@ Justice.Garden (codename: SJFAQ) is a Rails web application for managing questio
 - **Ruby**: 4.0.1
 - **Rails**: 8.1.0
 - **Node.js**: 24.13.0
-- **Database**: PostgreSQL 10.18
-- **Background Jobs**: Sidekiq with ActiveJob
+- **Database**: PostgreSQL 17.9
+- **Background Jobs**: Solid Queue with ActiveJob
 - **Testing**: RSpec with 100% code coverage requirement
 - **Frontend**: HAML templates, CSS (via cssbundling-rails + esbuild), Turbolinks
 
@@ -82,7 +82,7 @@ end
 
 - Use singular resources for one-per-user resources: `resource :account`, `resource :session`
 - Use nested shallow resources for parent-child relationships
-- Background jobs use `CallableJob` abstraction for passing callable objects to Sidekiq
+- Background jobs use `CallableJob` abstraction for passing callable objects to Solid Queue
 
 ## Testing Requirements
 
@@ -217,7 +217,7 @@ bundle exec guard
 ## Security Notes
 
 - `has_secure_password` used for authentication (BCrypt)
-- AdminConstraint protects Sidekiq Web dashboard
+- AdminConstraint protects the Mission Control jobs dashboard (`/jobs`)
 - CSRF protection enabled
 - Strong parameters enforced
 - Regular dependency audits via Bundler-audit
