@@ -44,6 +44,7 @@ Metrics/BlockLength:
 # https://github.com/rubocop-hq/rubocop/issues/7841
 Style/TrailingCommaInBlockArgs: { Enabled: false }
 Rails/FilePath: { EnforcedStyle: slashes }
+Metrics/MethodLength: { Exclude: [db/migrate/**/*.rb] }
 RSpec/MultipleExpectations:
   Exclude:
     - spec/system/**/*.rb
