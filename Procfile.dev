@@ -1,3 +1,4 @@
 web: bin/rails server -p 3000
+worker: bin/jobs
 js: pnpm build --watch
 css: pnpm build:css --watch
