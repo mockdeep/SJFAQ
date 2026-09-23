@@ -54,6 +54,7 @@ end
 group :test do
   gem "capybara", require: false
   gem "capybara-screenshot", require: false
+  gem "rspec_junit_formatter", require: false
   gem "selenium-webdriver"
   gem "shoulda-matchers"
   gem "simplecov", require: false
