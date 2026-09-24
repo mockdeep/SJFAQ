@@ -8,10 +8,8 @@ Justice.Garden (codename: SJFAQ) is a Rails web application for managing questio
 
 ## Tech Stack
 
-- **Ruby**: 4.0.1
-- **Rails**: 8.1.0
-- **Node.js**: 24.13.0
-- **Database**: PostgreSQL 17.9
+- **Ruby, Node.js, PostgreSQL, pnpm**: see `.tool-versions`
+- **Rails**: see `Gemfile`
 - **Background Jobs**: Solid Queue with ActiveJob
 - **Testing**: RSpec with 100% code coverage requirement
 - **Frontend**: HAML templates, CSS (via cssbundling-rails + esbuild), Turbolinks
