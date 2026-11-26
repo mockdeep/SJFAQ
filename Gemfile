@@ -38,6 +38,7 @@ group :development do
   gem "guard-rspec", require: false
   gem "guard-rubocop", require: false
   gem "listen"
+  gem "ostruct", require: false # for guard-rspec on Ruby 4
   gem "rubocop", require: false
   gem "rubocop-capybara", require: false
   gem "rubocop-factory_bot", require: false
