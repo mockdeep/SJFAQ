@@ -1,4 +1,4 @@
-# CLAUDE.md - Project Guidelines for Justice.Garden (SJFAQ)
+# AGENTS.md - Project Guidelines for Justice.Garden (SJFAQ)
 
 This file contains essential information about project conventions, patterns, and guidelines for AI-assisted development.
 
