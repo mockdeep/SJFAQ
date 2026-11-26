@@ -3,7 +3,7 @@
 Rails.application.routes.draw do
   root to: "welcome#index"
 
-  resource :account, only: [:new, :create, :show, :update, :destroy]
+  resource :account, only: [:new, :create, :show, :update, :remove, :destroy]
   resource :session, only: [:new, :create, :destroy]
   resources :questions, only: [:new, :create, :edit, :update] do
     resources :answers, only: [:new, :create, :edit, :update], shallow: true

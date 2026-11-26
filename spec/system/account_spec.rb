@@ -25,10 +25,8 @@ RSpec.describe "user account", type: :system do
 
   def delete_account
     click_on("Account")
-
-    accept_confirm("Are you sure? This cannot be undone.") do
-      click_on("Delete Account")
-    end
+    click_on("Delete Account")
+    click_on("Permanently Delete Account")
   end
 
   it "allows a user to sign up for an account" do
