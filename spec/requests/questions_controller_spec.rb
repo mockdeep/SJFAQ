@@ -3,22 +3,11 @@
 require "rails_helper"
 
 RSpec.describe QuestionsController do
-  def sign_in
-    user = User.create!(
-      email: "demo@exampoo.com",
-      password: "super-secure",
-      password_confirmation: "super-secure",
-      role: :admin,
-    )
-    session[:user_id] = user.id
-    user
-  end
-
   describe "#new" do
     it "renders a new form" do
-      sign_in
+      login_as(create(:user, role: :admin))
 
-      get(:new)
+      get(new_question_path)
 
       expect(response.body).to include(I18n.t("create_question"))
     end
@@ -26,9 +15,11 @@ RSpec.describe QuestionsController do
 
   describe "#edit" do
     it "renders an edit form" do
-      question = sign_in.questions.create!(text: "Why?")
+      admin = create(:user, role: :admin)
+      question = admin.questions.create!(text: "Why?")
+      login_as(admin)
 
-      get(:edit, params: { id: question.id })
+      get(edit_question_path(question))
 
       expect(response.body).to include(I18n.t("update_question"))
     end

@@ -40,14 +40,10 @@ class AccountsController < ApplicationController
   end
 
   def destroy
-    if current_user.destroy
-      log_out
-      flash[:success] = t(".success")
-      redirect_to(root_path)
-    else
-      flash.now[:error] = t(".error")
-      render(Views::Accounts::Show.new(user: current_user))
-    end
+    current_user.destroy!
+    log_out
+    flash[:success] = t(".success")
+    redirect_to(root_path)
   end
 
   private

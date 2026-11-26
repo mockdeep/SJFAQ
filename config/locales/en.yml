@@ -47,7 +47,6 @@ en:
       error: "There was a problem updating your account"
     destroy:
       success: "Account permanently deleted"
-      error: "Account could not be deleted"
   sessions:
     create:
       error: "Invalid email or password"
