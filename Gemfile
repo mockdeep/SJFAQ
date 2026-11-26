@@ -11,11 +11,11 @@ gem "bcrypt"
 gem "bootsnap", require: false
 gem "cssbundling-rails"
 gem "goldiloader"
-gem "haml-rails"
 gem "jsbundling-rails"
 gem "mission_control-jobs"
 gem "nokogiri", "~> 1.19.0" # for Ruby 3.2
 gem "pg"
+gem "phlex-rails"
 gem "puma", "~> 8.0"
 gem "scout_apm"
 gem "solid_cable"
@@ -34,10 +34,8 @@ end
 group :development do
   gem "brakeman", require: false
   gem "guard", require: false
-  gem "guard-haml_lint", require: false
   gem "guard-rspec", require: false
   gem "guard-rubocop", require: false
-  gem "haml_lint", require: false
   gem "listen"
   gem "rubocop", require: false
   gem "rubocop-capybara", require: false

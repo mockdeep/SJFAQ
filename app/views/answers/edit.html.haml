@@ -1,6 +1,0 @@
-%h3= answer.question.text
-
-= form_with(model: answer) do |form|
-  = form.label(:text)
-  = form.rich_text_area(:text)
-  = form.submit(t("update_answer"))

@@ -1,6 +1,0 @@
-%h3= question.text
-
-= form_with(scope: :answer, url: question_answers_path(question)) do |form|
-  = form.label(:text)
-  = form.rich_text_area(:text)
-  = form.submit(t("create_answer"))

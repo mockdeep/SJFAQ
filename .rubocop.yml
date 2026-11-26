@@ -73,6 +73,7 @@ Style/MethodCallWithArgsParentheses:
     - enum
     - exec
     - exit
+    - extend
     - fit
     - gem
     - has_many
@@ -88,6 +89,7 @@ Style/MethodCallWithArgsParentheses:
     - puts
     - rails_require
     - raise
+    - register_value_helper
     - require
     - require_relative
     - ruby

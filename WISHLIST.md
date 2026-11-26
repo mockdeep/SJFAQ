@@ -2,7 +2,7 @@
 
 We disabled remote forms when using `form_with` because things like flash
 messages don't show up when we re-render. Maybe we can come up with a way of
-adding a `layout/application.js.haml` to insert flashes into the page
+adding a JS response to insert flashes into the page
 dynamically. We'll want to remove the following configuration:
 
 ```rb

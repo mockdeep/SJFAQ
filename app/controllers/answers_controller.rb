@@ -4,11 +4,13 @@ class AnswersController < ApplicationController
   def new
     question = Question.find(params.expect(:question_id))
 
-    render(:new, locals: { question: question })
+    render(Views::Answers::New.new(question:))
   end
 
   def edit
-    render(locals: { answer: Answer.find(params.expect(:id)) })
+    answer = Answer.find(params.expect(:id))
+
+    render(Views::Answers::Edit.new(answer:))
   end
 
   def create

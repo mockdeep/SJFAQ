@@ -12,7 +12,7 @@ Justice.Garden (codename: SJFAQ) is a Rails web application for managing questio
 - **Rails**: see `Gemfile`
 - **Background Jobs**: Solid Queue with ActiveJob
 - **Testing**: RSpec with 100% code coverage requirement
-- **Frontend**: HAML templates, CSS (via cssbundling-rails + esbuild), Turbolinks
+- **Frontend**: Phlex views and components, CSS (via cssbundling-rails + esbuild), Turbolinks
 
 ## Code Style Conventions
 
@@ -30,7 +30,7 @@ Justice.Garden (codename: SJFAQ) is a Rails web application for managing questio
 
 - Keep controllers thin with minimal logic
 - Authentication required by default via `before_action(:authenticate_user)`
-- Use `render(locals: { ... })` to pass variables to views
+- Render Phlex view objects: `render(Views::Accounts::Show.new(user:))`
 - Successful operations redirect to `root_path`
 - Use flash messages for user feedback
 
@@ -43,7 +43,13 @@ Justice.Garden (codename: SJFAQ) is a Rails web application for managing questio
 
 ### Views
 
-- **HAML only** - no ERB
+- **Phlex only** - views are Ruby classes in `app/views` under the `Views::`
+  namespace and inherit from `Views::Base`, which wraps them in the layout
+- Reusable pieces go in `app/components` under `Components::` and inherit
+  from `Components::Base`
+- Include Rails helpers explicitly, e.g.
+  `include Phlex::Rails::Helpers::LinkTo`
+- Mailer layouts are the exception and use ERB
 - Use `current_user.logged_in?` for conditional rendering
 - Use `link_to` helper with method parameter for non-GET requests
 - Render flash messages from shared loop
@@ -139,7 +145,6 @@ add_question("What is the meaning of life?")
 
 ### Other Tools
 
-- **Haml-lint**: Run with `bundle exec haml-lint`
 - **Brakeman**: Security scanning with `bundle exec brakeman`
 - **Bundler-audit**: Dependency vulnerability scanning with `bundle exec rails bundle:audit`
 
@@ -149,7 +154,6 @@ add_question("What is the meaning of life?")
 
 Guard is configured for auto-running tests and linters:
 - RSpec auto-runner with Spring
-- Haml-lint auto-runner
 - RuboCop auto-runner with auto-fix
 - Halts on first failure
 
@@ -161,9 +165,8 @@ All of these must pass:
 1. RSpec tests with 100% coverage
 2. RuboCop with no offenses
 3. Stylelint with no errors
-4. Haml-lint with no errors
-5. Brakeman with no security warnings
-6. Bundler-audit with no vulnerable dependencies
+4. Brakeman with no security warnings
+5. Bundler-audit with no vulnerable dependencies
 
 ### CI/CD Pipeline (CircleCI)
 
@@ -173,8 +176,7 @@ The CircleCI pipeline runs:
 3. Brakeman security scan
 4. Stylelint
 5. RuboCop
-6. Haml-lint
-7. RSpec with coverage
+6. RSpec with coverage
 
 ## Common Tasks
 
@@ -207,7 +209,7 @@ bundle exec guard
 
 1. Write system/integration tests first
 2. Implement controllers (keep thin)
-3. Create HAML views
+3. Create Phlex views
 4. Add CSS following BEM pattern
 5. Run all linters and tests
 6. Verify 100% coverage maintained
@@ -224,7 +226,8 @@ bundle exec guard
 
 - **Models**: `/app/models` (Null Objects in `/app/models/nulls`)
 - **Controllers**: `/app/controllers`
-- **Views**: `/app/views` (HAML only)
+- **Views**: `/app/views` (Phlex classes)
+- **Components**: `/app/components` (Phlex classes)
 - **Stylesheets**: `/app/assets/stylesheets` (CSS)
 - **JavaScript**: `/app/javascript/packs` (Webpack entry points)
 - **Tests**: `/spec`
@@ -235,7 +238,6 @@ bundle exec guard
 
 - `.rubocop.yml`: Ruby style configuration
 - `.stylelintrc.yml`: CSS linting configuration
-- `.haml-lint.yml`: HAML linting configuration
 - `Guardfile`: Auto-run configuration
 - `.circleci/config.yml`: CI/CD pipeline
 - `spec/spec_helper.rb`: RSpec configuration
@@ -243,7 +245,7 @@ bundle exec guard
 
 ## Don't
 
-- Don't use ERB templates (HAML only)
+- Don't use ERB or HAML templates (Phlex only, except mailer layouts)
 - Don't add validations that duplicate database constraints
 - Don't use single quotes for strings
 - Don't skip the linters or tests
