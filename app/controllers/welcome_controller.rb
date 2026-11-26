@@ -3,6 +3,8 @@
 class WelcomeController < ApplicationController
   skip_before_action(:authenticate_user)
   def index
-    render(:index, locals: { questions: Question.includes(:answer) })
+    questions = Question.includes(:answer)
+
+    render(Views::Welcome::Index.new(questions:))
   end
 end

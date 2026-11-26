@@ -9,9 +9,6 @@ if Rails.env.local?
   require "rubocop/rake_task"
   RuboCop::RakeTask.new
 
-  require "haml_lint/rake_task"
-  HamlLint::RakeTask.new
-
   task("pnpm:audit") do
     sh("pnpm audit")
   end
@@ -30,7 +27,6 @@ if Rails.env.local?
       "bundle:audit",
       :brakeman,
       :rubocop,
-      :haml_lint,
       :stylelint,
     ],
   )

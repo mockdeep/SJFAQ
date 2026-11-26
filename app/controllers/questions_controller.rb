@@ -1,10 +1,14 @@
 # frozen_string_literal: true
 
 class QuestionsController < ApplicationController
-  def new; end
+  def new
+    render(Views::Questions::New.new)
+  end
 
   def edit
-    render(locals: { question: Question.find(params.expect(:id)) })
+    question = Question.find(params.expect(:id))
+
+    render(Views::Questions::Edit.new(question:))
   end
 
   def create

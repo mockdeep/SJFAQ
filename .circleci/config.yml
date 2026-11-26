@@ -105,10 +105,6 @@ jobs:
           command: bundle exec rubocop
 
       - run:
-          name: Haml Lint
-          command: bundle exec haml-lint
-
-      - run:
           name: ✨ 🌈 ✨ Run Unit Tests ✨ 🌈 ✨
           command: |
             TEST_FILES="$(circleci tests glob "spec/**/*_spec.rb" | \
