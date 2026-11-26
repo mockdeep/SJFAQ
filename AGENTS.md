@@ -153,7 +153,7 @@ add_question("What is the meaning of life?")
 ### Guard
 
 Guard is configured for auto-running tests and linters:
-- RSpec auto-runner with Spring
+- RSpec auto-runner
 - RuboCop auto-runner with auto-fix
 - Halts on first failure
 
