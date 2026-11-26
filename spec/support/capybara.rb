@@ -16,6 +16,10 @@ RSpec.configure do |config|
   end
 
   config.before(:each, :js, type: :system) do
-    driven_by(driver || :selenium_headless)
+    if driver
+      driven_by(driver)
+    else
+      driven_by(:selenium, using: :headless_firefox)
+    end
   end
 end
