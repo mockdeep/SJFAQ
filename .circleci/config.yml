@@ -10,8 +10,6 @@ executors:
     docker:
       - image: cimg/ruby:4.0.10-browsers
         environment:
-          BUNDLE_JOBS: 3
-          BUNDLE_RETRY: 3
           BUNDLE_PATH: vendor/bundle
           PGHOST: 127.0.0.1
           PGUSER: postgres
@@ -46,15 +44,18 @@ commands:
       # https://circleci.com/docs/2.0/caching/
       - restore_cache:
           keys:
-            - bundle-v1-{{ checksum "Gemfile.lock" }}
-            - bundle-v1-
+            - bundle-v2-{{ checksum "Gemfile.lock" }}
+            - bundle-v2-
 
       - run: # Install Ruby dependencies
           name: Bundle Install
-          command: bundle check || bundle install
+          command: |
+            bundle config set --local frozen 'true'
+            bundle install
+            bundle clean
 
       - save_cache:
-          key: bundle-v1-{{ checksum "Gemfile.lock" }}
+          key: bundle-v2-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
 
@@ -87,6 +88,10 @@ jobs:
       - run:
           name: Verify ESLint Autogen
           command: bundle exec exe/eslint_autogen
+
+      - run:
+          name: Vitest
+          command: pnpm vitest run --coverage
 
       - run:
           name: Brakeman
