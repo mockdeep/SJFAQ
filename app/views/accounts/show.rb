@@ -26,12 +26,7 @@ module Views
           end
         end
 
-        button_to(
-          "Delete Account",
-          account_path,
-          method: :delete,
-          data: { confirm: "Are you sure? This cannot be undone." },
-        )
+        a(href: remove_account_path) { "Delete Account" }
       end
     end
   end
