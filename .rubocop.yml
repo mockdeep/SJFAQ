@@ -45,6 +45,8 @@ Metrics/BlockLength:
     - config/environments/development.rb
 # https://github.com/rubocop-hq/rubocop/issues/7841
 Style/TrailingCommaInBlockArgs: { Enabled: false }
+Rails/EnvironmentVariableAccess:
+  Exclude: [config/initializers/backtrace_silencers.rb]
 Rails/FilePath: { EnforcedStyle: slashes }
 Rails/SkipsModelValidations: { AllowedMethods: [decrement!, increment!] }
 Metrics/MethodLength: { Exclude: [db/migrate/**/*.rb] }
