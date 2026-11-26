@@ -27,6 +27,7 @@ gem "turbo-rails"
 
 group :development, :test do
   gem "bundler-audit"
+  gem "factory_bot_rails", require: false
   gem "faker"
   gem "rspec-rails"
 end
@@ -39,6 +40,7 @@ group :development do
   gem "listen"
   gem "rubocop", require: false
   gem "rubocop-capybara", require: false
+  gem "rubocop-factory_bot", require: false
   gem "rubocop-i18n", require: false
   gem "rubocop-rails", require: false
   gem "rubocop-rspec", require: false
