@@ -13,11 +13,10 @@ gem "cssbundling-rails"
 gem "goldiloader"
 gem "jsbundling-rails"
 gem "mission_control-jobs"
-gem "nokogiri", "~> 1.19.0" # for Ruby 3.2
 gem "pg"
 gem "phlex-rails"
 gem "propshaft"
-gem "puma", "~> 8.0"
+gem "puma"
 gem "scout_apm"
 gem "solid_cable"
 gem "solid_queue"
@@ -26,9 +25,8 @@ gem "strong_migrations"
 gem "turbo-rails"
 
 group :development, :test do
-  gem "bundler-audit"
+  gem "bundler-audit", require: false
   gem "factory_bot_rails", require: false
-  gem "faker"
   gem "rspec-rails"
 end
 
@@ -37,13 +35,14 @@ group :development do
   gem "guard", require: false
   gem "guard-rspec", require: false
   gem "guard-rubocop", require: false
-  gem "listen"
   gem "ostruct", require: false # for guard-rspec on Ruby 4
+  gem "rspec_junit_formatter", require: false
   gem "rubocop", require: false
   gem "rubocop-capybara", require: false
   gem "rubocop-factory_bot", require: false
   gem "rubocop-i18n", require: false
   gem "rubocop-rails", require: false
+  gem "rubocop-rake", require: false
   gem "rubocop-rspec", require: false
   gem "rubocop-rspec_rails", require: false
   gem "web-console"
@@ -51,8 +50,6 @@ end
 
 group :test do
   gem "capybara", require: false
-  gem "capybara-screenshot", require: false
-  gem "rspec_junit_formatter", require: false
   gem "selenium-webdriver"
   gem "shoulda-matchers"
   gem "simplecov", require: false

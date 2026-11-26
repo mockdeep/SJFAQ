@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "capybara/rails"
-require "capybara-screenshot/rspec"
 
 Capybara.enable_aria_label = true
 Capybara.server = :puma, { Silent: true }

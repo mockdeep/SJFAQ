@@ -12,6 +12,7 @@ plugins:
   - rubocop-factory_bot
   - rubocop-i18n
   - rubocop-rails
+  - rubocop-rake
   - rubocop-rspec
   - rubocop-rspec_rails
 
