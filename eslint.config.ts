@@ -18,7 +18,6 @@ export default defineConfig([
     ignores: [
       ".eslint_todo.ts",
       "app/assets/builds/**",
-      "app/assets/config/**",
       "coverage/**",
       "public/**",
       "vendor/**",

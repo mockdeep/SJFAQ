@@ -4,8 +4,7 @@ require:
 inherit_from: .rubocop_todo.yml
 
 inherit_mode:
-  merge:
-    - Exclude
+  merge: [Exclude]
 
 plugins:
   - rubocop-capybara
@@ -20,7 +19,6 @@ AllCops:
   DefaultFormatter: fuubar
   DisplayCopNames: true
   EnabledByDefault: true
-  Exclude: [db/schema.rb, node_modules/**/*, vendor/**/*]
 
 ################################################################################
 #
@@ -32,18 +30,17 @@ Style/ModuleFunction: { EnforcedStyle: extend_self }
 Layout/LineLength:
   Max: 80
   AutoCorrect: true
-  Exclude: ['config/**/*']
+  Exclude:
+    - config/**/*
+    - db/migrate/*_create_solid_queue_tables.rb
 Layout/MultilineMethodCallIndentation: { EnforcedStyle: indented }
 Layout/MultilineOperationIndentation: { EnforcedStyle: indented }
 Metrics/BlockLength:
   AllowedMethods:
-    - configure
     - describe
   Exclude:
     - db/schema.rb
     - config/environments/development.rb
-# https://github.com/rubocop-hq/rubocop/issues/7841
-Style/TrailingCommaInBlockArgs: { Enabled: false }
 Rails/EnvironmentVariableAccess:
   Exclude: [config/initializers/backtrace_silencers.rb]
 Rails/FilePath: { EnforcedStyle: slashes }
@@ -86,6 +83,7 @@ Style/MethodCallWithArgsParentheses:
     - it
     - layout
     - load
+    - normalizes
     - not_to
     - p
     - puts
@@ -94,6 +92,7 @@ Style/MethodCallWithArgsParentheses:
     - require
     - require_relative
     - ruby
+    - scope
     - source
     - store_accessor
     - to
@@ -135,7 +134,6 @@ I18n/GetText: { Enabled: false }
 Layout/SingleLineBlockChain: { Enabled: false }
 Lint/ConstantResolution: { Enabled: false }
 Rails/OrderById: { Enabled: false }
-Rails/RakeEnvironment: { Enabled: false }
 Rails/RedundantPresenceValidationOnBelongsTo: { Enabled: false }
 Rails/SchemaComment: { Enabled: false }
 RSpec/AlignLeftLetBrace: { Enabled: false }

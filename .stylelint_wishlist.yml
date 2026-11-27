@@ -5,3 +5,4 @@ rules:
     # https://github.com/postcss/postcss-bem-linter#defining-a-component-and-utilities
     # https://github.com/simonsmith/stylelint-selector-bem-pattern
     implicitComponents: true
+    utilitySelectors: '^\.[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*$'
