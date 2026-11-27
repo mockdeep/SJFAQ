@@ -8,7 +8,7 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module LetMeKnowWhen
+module JusticeGarden
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults(8.1)
@@ -25,8 +25,6 @@ module LetMeKnowWhen
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-    #
-    config.active_job.queue_name_prefix = "letmeknowwhen_#{Rails.env}"
 
     config.active_record.belongs_to_required_by_default = false
 
