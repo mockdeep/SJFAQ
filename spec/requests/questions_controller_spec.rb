@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "rails_helper"
-
 RSpec.describe QuestionsController do
   describe "#new" do
     it "renders a new form" do

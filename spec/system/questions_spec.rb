@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-require "rails_helper"
-
-RSpec.describe "questions", type: :system do
+RSpec.describe "questions" do
   it "allows admins to create questions" do
     create_and_sign_in_admin
 

@@ -2,6 +2,9 @@
 
 require "capybara/rails"
 
+require_relative "capybara/rack_test"
+require_relative "capybara/rich_text"
+
 Capybara.enable_aria_label = true
 Capybara.server = :puma, { Silent: true }
 Capybara.drivers[:chrome] = Capybara.drivers[:selenium_chrome]

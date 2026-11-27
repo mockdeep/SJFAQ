@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "rails_helper"
-
 RSpec.describe WelcomeController do
   def sign_in(**params)
     user = create(:user, **params)

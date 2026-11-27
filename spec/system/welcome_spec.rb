@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-require "rails_helper"
-
-RSpec.describe "welcome page", type: :system do
+RSpec.describe "welcome page" do
   it "has welcome text" do
     visit("/")
 

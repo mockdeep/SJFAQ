@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-require "rails_helper"
-
-RSpec.describe "answers", :js, type: :system do
+RSpec.describe "answers", :js do
   it "allows admins to create answers" do
     user = create_and_sign_in_admin
     create_question(user: user, text: "Where is Spain?")
