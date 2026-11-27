@@ -89,7 +89,6 @@ Style/MethodCallWithArgsParentheses:
     - not_to
     - p
     - puts
-    - rails_require
     - raise
     - register_value_helper
     - require

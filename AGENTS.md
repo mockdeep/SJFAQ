@@ -240,7 +240,7 @@ bundle exec guard
 - `.stylelintrc.yml`: CSS linting configuration
 - `Guardfile`: Auto-run configuration
 - `.circleci/config.yml`: CI/CD pipeline
-- `spec/spec_helper.rb`: RSpec configuration
+- `spec/rails_helper.rb`: RSpec configuration
 - `spec/support/`: Custom test helpers and matchers
 
 ## Don't

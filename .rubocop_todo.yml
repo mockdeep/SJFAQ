@@ -110,6 +110,5 @@ Style/RedundantFetchBlock:
 # Offense count: 8
 Style/TopLevelMethodDefinition:
   Exclude:
-    - 'spec/spec_helper.rb'
     - 'spec/support/matchers.rb'
     - 'spec/support/mocks.rb'

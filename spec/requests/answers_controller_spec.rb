@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "rails_helper"
-
 RSpec.describe AnswersController do
   def create_answer(user)
     question = user.questions.create!(text: "Why?")

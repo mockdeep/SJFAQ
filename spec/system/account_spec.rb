@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-require "rails_helper"
-
-RSpec.describe "user account", type: :system do
+RSpec.describe "user account" do
   def sign_up_with(
     email: "demo@example.com",
     password: "secret",
