@@ -28,6 +28,9 @@ module JusticeGarden
 
     config.active_record.belongs_to_required_by_default = false
 
+    # We don't use image attachments, so skip the image_processing gem.
+    config.active_storage.variant_processor = :disabled
+
     config.active_job.queue_adapter = :solid_queue
     config.solid_queue.clear_finished_jobs_after = 14.days
 
