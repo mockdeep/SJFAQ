@@ -11,7 +11,12 @@ Bundler.require(*Rails.groups)
 module LetMeKnowWhen
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults(8.0)
+    config.load_defaults(8.1)
+
+    # Please, add to the `ignore` list any other `lib` subdirectories that do
+    # not contain `.rb` files, or that should not be reloaded or eager loaded.
+    # Common ones are `templates`, `generators`, or `middleware`, for example.
+    config.autoload_lib(ignore: ["assets", "tasks"])
 
     # Configuration for the application, engines, and railties goes here.
     #
@@ -24,7 +29,6 @@ module LetMeKnowWhen
     config.active_job.queue_name_prefix = "letmeknowwhen_#{Rails.env}"
 
     config.active_record.belongs_to_required_by_default = false
-    config.action_view.form_with_generates_remote_forms = false
 
     config.active_job.queue_adapter = :solid_queue
     config.solid_queue.clear_finished_jobs_after = 14.days
