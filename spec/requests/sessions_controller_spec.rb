@@ -11,6 +11,10 @@ RSpec.describe SessionsController do
 
   def valid_create_params = { session: user_params.slice(:email, :password) }
 
+  def mixed_case_create_params
+    valid_create_params.deep_merge(session: { email: " Demo@Exampoo.COM " })
+  end
+
   def invalid_create_params
     {
       session: {
@@ -44,6 +48,14 @@ RSpec.describe SessionsController do
         post(session_path, params: valid_create_params)
 
         expect(response).to redirect_to(root_path)
+      end
+
+      it "ignores capitalization and spaces in the email" do
+        user = User.create!(user_params)
+
+        post(session_path, params: mixed_case_create_params)
+
+        expect(session[:user_id]).to eq(user.id)
       end
     end
 

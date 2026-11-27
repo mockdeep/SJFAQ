@@ -63,6 +63,27 @@ RSpec.describe AccountsController do
         expect(response.body).to include("New Account")
       end
     end
+
+    context "when the email is already taken" do
+      def mixed_case_create_params
+        valid_create_params.deep_merge(user: { email: "Demo@Exampoo.com" })
+      end
+
+      it "does not create another user" do
+        User.create!(valid_create_params[:user])
+
+        expect { post(account_path, params: mixed_case_create_params) }
+          .not_to change(User, :count)
+      end
+
+      it "flashes an error message" do
+        User.create!(valid_create_params[:user])
+
+        post(account_path, params: valid_create_params)
+
+        expect(response.body).to include("There was a problem")
+      end
+    end
   end
 
   describe "#show" do
