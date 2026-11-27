@@ -10,7 +10,7 @@ const config: Linter.Config[] = [
   {
     files: [
       "app/javascript/controllers/hotkeys_controller.ts",
-      "spec/javascript/helpers/assert_spec.ts",
+      "spec/javascript/helpers/ensure_spec.ts",
       "spec/javascript/support/stimulus.ts",
     ],
     rules: {
@@ -29,7 +29,7 @@ const config: Linter.Config[] = [
   // Offense count: 1
   {
     files: [
-      "spec/javascript/helpers/assert_spec.ts",
+      "spec/javascript/helpers/ensure_spec.ts",
     ],
     rules: {
       "vitest/prefer-describe-function-title": "off",
@@ -43,7 +43,7 @@ const config: Linter.Config[] = [
       "spec/javascript/channels/consumer_spec.ts",
       "spec/javascript/controllers/dialog_controller_spec.ts",
       "spec/javascript/controllers/hotkeys_controller_spec.ts",
-      "spec/javascript/helpers/assert_spec.ts",
+      "spec/javascript/helpers/ensure_spec.ts",
       "spec/javascript/setup.ts",
       "spec/javascript/support/stimulus.ts",
     ],
