@@ -12,6 +12,18 @@ RSpec.describe User do
   it { is_expected.to validate_presence_of(:email) }
   it { is_expected.to have_secure_password }
 
+  it do
+    expect(described_class.new)
+      .to normalize(:email).from(" Demo@Example.COM ").to("demo@example.com")
+  end
+
+  it do
+    create(:user)
+
+    expect(described_class.new)
+      .to validate_uniqueness_of(:email).case_insensitive
+  end
+
   it "allows good emails" do
     good_emails = [
       "b@b.com", "mrspicy+extra@yepyep.com", "you.are@atthe.museum"
