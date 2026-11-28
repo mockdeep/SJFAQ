@@ -12,7 +12,7 @@ RSpec.describe "questions" do
 
   it "allows admins to edit questions" do
     user = create_and_sign_in_admin
-    create_question(user: user, text: "Where is Spain?")
+    create_question(user:, text: "Where is Spain?")
 
     update_question("Where is Spain?", text: "Where is Portugal?")
 
@@ -27,7 +27,7 @@ RSpec.describe "questions" do
 
   it "does not allow non-admins to edit questions" do
     user = create_and_sign_in_user
-    create_question(user: user, text: "Where is Spain?")
+    create_question(user:, text: "Where is Spain?")
 
     expect(page).to have_text("Where is Spain?")
     expect(page).to have_no_link(t("edit_question"))
